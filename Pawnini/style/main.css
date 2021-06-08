@@ -292,7 +292,8 @@ align-items: center;
 }
  .Header_ul > li > .dropmenu > span:hover{
     font-weight: 700;
-    color:black;
+    color:pink;
+    transition: color 0.5s ease-in-out;
 }
 .Dog_dropmenu{
     height: 60px;
