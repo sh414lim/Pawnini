@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #wrap {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .page {
+        width: 100vw;
+        height: 100vh;
+      }
+      .page1 {
+        background: wheat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      }
+      .page1 .title {
+        font-size: 30px;
+        padding: 10px 0;
+        text-transform: uppercase;
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: all 0.8s;
+      }
+      .page1 .con {
+        font-size: 20px;
+        padding: 20px 0;
+        transform: rotateY(90deg);
+        opacity: 0;
+        transition: all 0.8s;
+      }
+      .page1 .title.ani {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .page1 .con.ani {
+        opacity: 1;
+        transform: rotateY(0);
+      }
+      .page2 {
+        background: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="page page1">
+        <p class="title">title</p>
+        <p class="con">블라블라블라</p>
+      </div>
+      <div class="page page2"></div>
+    </div>
+    <script>
+      var ani1 = false;
+      var ani2 = false;
+      $(".page").on("mousewheel", function (e) {
+        var wheel = e.originalEvent.wheelDelta;
+        if (wheel > 0) {
+          //스크롤 올릴때
+        } else {
+          //스크롤  내릴때
+          if (ani1 == false) {
+            ani1 = true;
+            $(".page1 .title").addClass("ani");
+          } else if (ani2 == false) {
+            ani2 = true;
+            $(".page1 .con").addClass("ani");
+          } else {
+            $("#wrap").css("overflow", "auto");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
