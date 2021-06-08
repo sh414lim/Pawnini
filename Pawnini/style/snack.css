@@ -21,6 +21,10 @@ body{
     font-weight: 600;
     cursor: pointer;
 }
+.Table_LI :hover{
+    color: pink;
+    transition: color 0.5s ease-in-out;
+}
 
 .product{
     display: flex;
@@ -42,6 +46,10 @@ grid-template-rows:repeat(4,300px) ;
     height: 180px;
     margin-left: 40px;
     margin-top: 30px;
+}
+.product_li :hover{
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in-out;
 }
 .product_list{
     display: flex;
