@@ -3,8 +3,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 500px;
+    background-color: rgba(0,0,0,0.1);
+    width: 50%;
+    margin-top: 300px;
+    margin-left: 500px;
+    height: 700px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
 }
 body{
     height: 200vh;
+}
+
+   
+.Form_title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 60px;
+    
+}
+.Form_Login{
+    width: 400px;
+    height: 60px;
+    margin-bottom: 30px;
+    font-size: 25px;
+
+}
+.Form_Password{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+}
+.button_Login{
+margin-left: 350px;
+border-style: none;
+font-size: 20px;
+}
+.Form_SignUP{
+    display: flex;
+    justify-content: center;
+    margin-left: 350px;
 }
