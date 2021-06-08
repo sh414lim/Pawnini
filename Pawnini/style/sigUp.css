@@ -1,0 +1,149 @@
+body{
+    height: 100vh;
+
+}
+.User{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.1);
+    width: 50%;
+    height: 150vh;
+    margin-top: 100px;
+    margin-left: 500px;
+    box-shadow:  3px 3px rgba(0,0,0,0.8), -1em 0 .4em rgba(0,0,0,0.3);
+    border-radius: 25px;
+}
+body{
+    height: 200vh;
+}
+
+.User_text{
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-right: 350px;
+    font-weight: 600;
+}
+   
+.User_title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 60px;
+    
+}
+.User_name{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_Password{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_nickname{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_email{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_phone{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_card_id{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_card_come{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_postcode{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_f_addr{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.User_s_addr{
+    width: 400px;
+    height: 60px;
+    font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+.User_Button{
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.User_Button :hover{
+    opacity: 0.5;
+}

@@ -46,17 +46,14 @@ border-bottom: 1px solid rgba(0,0,0,0.1);
 padding: 0px 0px 10px 0px;
 }
 .Header_menu{
-    display: block;
   z-index:1;
-  border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 6px 3px 3px rgba(0,0,0,0.2);
 
 }
 .Header_ul{
     display: flex;
   position:sticky;
-
+  height: 60px;
     justify-content:space-around;
     align-items: center;
     list-style: none;
@@ -65,10 +62,7 @@ padding: 0px 0px 10px 0px;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     padding-bottom: 20px;
 }
-.Header_ul li :hover{
-    color:pink;
-    transition: color 0.6s ease-in-out;
-}
+
 .Header_ul li{
     width:140px;
     position:relative;
@@ -78,9 +72,12 @@ font-weight:600;
     opacity: 0.8;
 }
 #slide{
-    margin-top: 30px;
+    margin-top: 100px;
+    z-index: 0;
 }
-  ul,li{list-style:none;}
+  ul,li{list-style:none;
+    z-index: 0;
+}
   #slide{height:1000px;position:relative;overflow:hidden;}
   #slide ul{width:400%;height:100%;transition:1s;}
   #slide ul:after{content:"";display:block;clear:both;}
@@ -262,6 +259,50 @@ align-items: center;
     display: flex;
     position: relative;
 }
+
+.leftMenu > li{
+    width: auto;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    
+}
+ .Header_ul > li:hover > .dropmenu{
+    visibility: visible;
+}
+ .Header_ul > li > .dropmenu{
+    width: 150px;
+    clear: both;
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    text-align: left;
+    visibility: hidden;
+}
+ .Header_ul > li > .dropmenu > span{
+    width: 100%;
+    display: inline-block;
+    padding-left: 20px;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+ .Header_ul > li > .dropmenu > span:hover{
+    font-weight: 700;
+    color:black;
+}
+.Dog_dropmenu{
+    height: 60px;
+    margin-top: 50px;
+}
+.Cat_dropmenu{
+    height: 60px;
+    margin-top: 50px;
+}
+
 
 
 

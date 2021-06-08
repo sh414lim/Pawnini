@@ -9,6 +9,7 @@
     margin-left: 500px;
     height: 700px;
     box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 25px;
 }
 body{
     height: 200vh;
@@ -27,17 +28,24 @@ body{
     height: 60px;
     margin-bottom: 30px;
     font-size: 25px;
-
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
 }
 .Form_Password{
     width: 400px;
     height: 60px;
     font-size: 25px;
+    border:none;
+    border-bottom:2px solid rgba(0,0,0,0.3);
+    outline:none;
+    border-radius: 15px;
 }
 .button_Login{
 margin-left: 350px;
-border-style: none;
 font-size: 20px;
+border: none;
 }
 .Form_SignUP{
     display: flex;
