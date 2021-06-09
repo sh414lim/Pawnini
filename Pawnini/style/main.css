@@ -78,7 +78,7 @@ font-weight:600;
   ul,li{list-style:none;
     z-index: 0;
 }
-  #slide{height:600px;position:relative;overflow:hidden;}
+  #slide{height:800px;position:relative;overflow:hidden;}
   #slide ul{width:400%;height:100%;transition:1s;}
   #slide ul:after{content:"";display:block;clear:both;}
   #slide li{float:left;width:25%;height:100%;}
