@@ -78,7 +78,7 @@ font-weight:600;
   ul,li{list-style:none;
     z-index: 0;
 }
-  #slide{height:1000px;position:relative;overflow:hidden;}
+  #slide{height:600px;position:relative;overflow:hidden;}
   #slide ul{width:400%;height:100%;transition:1s;}
   #slide ul:after{content:"";display:block;clear:both;}
   #slide li{float:left;width:25%;height:100%;}
@@ -109,14 +109,15 @@ font-weight:600;
   #pos2:checked~ul{margin-left:-100%;}
   #pos3:checked~ul{margin-left:-200%;}
   #pos4:checked~ul{margin-left:-300%;}
-  #pos1:checked~.pos>label:nth-child(1){background:#666;}
-  #pos2:checked~.pos>label:nth-child(2){background:#666;}
-  #pos3:checked~.pos>label:nth-child(3){background:#666;}
-  #pos4:checked~.pos>label:nth-child(4){background:#666;}
+  #pos1:checked~.pos>label:nth-child(1){background:inherit;}
+  #pos2:checked~.pos>label:nth-child(2){background:inherit;}
+  #pos3:checked~.pos>label:nth-child(3){background:inherit;}
+  #pos4:checked~.pos>label:nth-child(4){background:inherit;}
 
 
   .Store_Save{
-      margin-top: 150px;
+      border-top: 1px solid rgba(0,0,0,0.3);
+    margin-top: 300px;
   }
   .Store_h1 {
     display: flex;
@@ -125,11 +126,11 @@ align-items: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
   margin-top: 50px;
   font-size: 50px;
-  margin-left: 50px;
+  margin-left: 100px;
 
   }
   .Store_h3{
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .store_grid{
@@ -190,7 +191,7 @@ padding-bottom: 300px;
 
 }
 .Post_own{
-    background-image: url("../images/dog6.jpg");
+    background-image: url("../images/dog12.jpg");
     background-position: center center;
     background-size: cover;
     box-shadow: 10px 5px 5px rgba(0,0,0,0.8);
@@ -303,6 +304,379 @@ align-items: center;
     height: 60px;
     margin-top: 50px;
 }
+
+
+.Brand_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    font-size: 100px;
+    text-shadow:  6px 2px 2px gray;
+}
+
+.Brand_ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    padding-top: 150px;
+}
+.Brand_ul li:nth-child(1){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+
+}
+
+.Brand_ul li:nth-child(2){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(3){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(4){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(5){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(6){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(7){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(8){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(9){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(10){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(11){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.Brand_ul li:nth-child(12){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+.Coment{
+    margin-top: 1500px;
+    display: flex;
+border-top: 1px solid rgba(0,0,0,0.5);
+background-color: #F4F4F4;
+}
+.Coment_Ul{
+    color:black;
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+margin-right: 200px;
+
+}
+.Coment_span{
+    padding: 30px 0px 20px 0px;
+display: flex;
+font-size: 13px;
+color:rgba(0,0,0,0.5);
+}
+
+
+
+body {
+    margin: 0px;
+  }
+  main {
+    padding-bottom: 100px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  section div {
+ 
+    width: 23%;
+    height: 300px;
+  }
+
+
+
+
+  /* Scroll Animation (sa, 스크롤 애니메이션) */
+  .sa {
+    opacity: 0;
+    transition: all 1.2s ease;
+  }
+
+  /* 아래에서 위로 페이드 인 */
+  .sa-up {
+    font-size: 100px;
+    transform: translate(0, 100px);
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .Text_one{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-right: 130px;
+    transform: translate(0, 100px);
+    font-size: 100px;
+    border-radius: 10px;
+    text-shadow:  6px 2px 2px gray;
+
+  }
+  .sa-up_two{
+    font-size: 100px;
+    transform: translate(-100px, 0);
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .Text_two{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 130px;
+  transform: translate(0, 100px);
+  font-size: 100px;
+  text-shadow:  6px 2px 2px gray;
+
+  }
+  .sa-up_two_last{
+    font-size: 100px;
+    transform: translate(-100px, 0);
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 500px;
+  }
+  .Text_two_last{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  transform: translate(0, 100px);
+  font-size: 100px;
+  text-shadow:  6px 2px 2px gray;
+
+  }
+
+
+  .sa-up_own {
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin-left: 800px;
+    /* transform: translate(-100px, 0); */
+    transform: scale(0.5);
+
+  }
+  /* 위에서 아래로 페이드 인 */
+  .sa-down {
+      display: grid;
+      grid-template-columns:repeat(4,1fr) ;
+      gap: 10px;
+      
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    transform: translate(0, -100px);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+    
+  }
+  .sa sa-down:hover{
+  }
+
+  .product{
+    border-radius: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 100px;
+}
+
+  /* 왼쪽에서 오른쪽으로 페이드 인 */
+  .sa-right {
+    transform: translate(-100px, 0);
+  }
+  /* 오른쪽에서 왼쪽으로 페이드 인 */
+  .sa-left {
+    transform: translate(100px, 0);
+  }
+  /* 왼쪽으로 회전하면서 페이드 인 */
+  .sa-rotateL {
+    transform: rotate(180deg);
+  }
+  /* 오른쪽으로 회전하면서 페이드 인 */
+
+  /* 작아진 상태에서 커지면서 페이드 인 */
+  .sa-scaleUp {
+    
+    transform: scale(0.5);
+  }
+  /* 커진 상태에서 작아지면서 페이드 인 */
+  .sa-scaleDown {
+    transform: scale(1.5);
+  }
+
+  .sa.show {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bener_ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 200px;
+    padding-top: 150px;
+    margin-left: 100px;
+      
+  }
+  .bener_ul li{
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .bener_ul li:nth-child(1){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(2){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(3){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(4){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width:600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(5){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(6){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width: 600px;
+    height: 380px;
+  }
+
+  .bener_text{
+      margin-top: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+      border-top: 1px solid rgba(0,0,0,0.2);
+      padding-top: 300px;
+      
+  }
+  
+  
 
 
 
