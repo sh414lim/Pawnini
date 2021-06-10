@@ -4,79 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign</title>
-    <link rel="stylesheet" href="style/sigUp.css" />
-    <link rel="stylesheet" href="style/main.css" />
+    <title>Dog</title>
+    <link rel="stylesheet" href="../style/Adoption.css" />
   </head>
   <body>
     <div class="Login">
       <ul class="Login_ul">
-        <li><a href="Login.html">LOGIN</a></li>
+        <li><a href="../Login.html">LOGIN</a></li>
+        <li><a href="../signUp.html">SignUp</a></li>
         <li><a>My Pages</a></li>
-        <li><a>SignUp</a></li>
       </ul>
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1><a href="./main.html"><img src=./images/Rogo.jpg></a></h1>
+        <h1><a href="../main.html"><img src=../images/Rogo.jpg></a></h1>
       </div>
       <input class="Header_input" type="text" placeholder="Search..." />
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
           Dog
           <span class="dropmenu">
-            <span><a href="./product/Snack.html">Snack</a></span>
-            <span><a href="./product/Supplies.html">Supplies</a></span>
-            <span><a href="./product/meal.html">meal</a></span>
+            <span><a href="../productCat/Snack.html">Snack</a></span>
+            <span><a href="../productCat/Supplies.html">Supplies</a></span>
+            <span><a href="../productCat/meal.html">meal</a></span>
           </span>
         </li>
         <li class="Cat_dropmenu">
           Cat
           <span class="dropmenu">
-            <span><a href="./productCat/Snack.html">Snack</a></span>
-            <span><a href="./productCat/Supplies.html">Supplies</a></span>
-            <span><a href="./productCat/meal.html">meal</a></span>
+            <span><a href="../productCat/Snack.html">Snack</a></span>
+            <span><a href="../productCat/Supplies.html">Supplies</a></span>
+            <span><a href="../productCat/meal.html">meal</a></span>
           </span>
         </li>
         <li><a>Event</a></li>
         <li><a>Service</a></li>
-        <li><a href="./Adopotion/Adoption.html">Adoption</a></li>
+        <li><a>Adoption</a></li>
         <li><a>Notice</a></li>
       </ul>
     </header>
-
-    <div class="User">
-      <h1 class="User_title">Sign Up</h1>
-      <h3 class="User_text">이름*</h3>
-      <input class="User_name" type="text" placeholder="User Name" />
-      <h3 class="User_text">비밀번호*</h3>
-      <input
-        class="User_Password"
-        type="password"
-        placeholder="User password"
-      />
-      <h3 class="User_text">닉네임*</h3>
-      <input class="User_nickname" type="text" placeholder="User Nick Name" />
-      <h3 class="User_text">이메일*</h3>
-      <input class="User_email" type="email" placeholder="User Email" />
-      <h3 class="User_text">전화번호*</h3>
-      <input class="User_phone" type="tel" placeholder="User Phone" />
-      <h3 class="User_text">카드</h3>
-      <input class="User_card_id" type="text" placeholder="User Card" />
-      <h3 class="User_text">카드번호</h3>
-      <input class="User_card_come" type="text" placeholder="User CardNumber" />
-      <h3 class="User_text">우편번호</h3>
-      <input class="User_postcode" type="text" placeholder="User PostNumber" />
-      <h3 class="User_text">주소*</h3>
-      <input class="User_f_addr" type="text" placeholder="User Address" />
-      <h3 class="User_text">상세주소*</h3>
-      <input
-        class="User_s_addr"
-        type="text"
-        placeholder="User Detail Address"
-      />
-      <button class="User_Button">Sign Up</button>
-    </div>
     <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
@@ -116,5 +82,26 @@
         </ul>
       </div>
     </footer>
+    <script>
+      // Scroll Animation (sa, 스크롤 애니메이션)
+      const saTriggerMargin = 300;
+      const saElementList = document.querySelectorAll(".sa");
+
+      const saFunc = function () {
+        for (const element of saElementList) {
+          if (!element.classList.contains("show")) {
+            if (
+              window.innerHeight >
+              element.getBoundingClientRect().top + saTriggerMargin
+            ) {
+              element.classList.add("show");
+            }
+          }
+        }
+      };
+
+      window.addEventListener("load", saFunc);
+      window.addEventListener("scroll", saFunc);
+    </script>
   </body>
 </html>
