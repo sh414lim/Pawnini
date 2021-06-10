@@ -71,6 +71,10 @@ font-weight:600;
     opacity: 0.8;
 }
 
+.Header_ul li :hover{
+  color:pink;
+  transition: color 0.5s ease-in-out;
+}
 
 
 

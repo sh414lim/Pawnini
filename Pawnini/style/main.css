@@ -309,6 +309,10 @@ align-items: center;
     height: 60px;
     margin-top: 50px;
 }
+.Header_ul li :hover{
+  color:pink;
+  transition: color 0.5s ease-in-out;
+}
 
 
 .Brand_text{

@@ -4,64 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="style/Login.css" />
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="../style/Adoption.css" />
+    <title>Snack</title>
   </head>
   <body>
     <div class="Login">
       <ul class="Login_ul">
-        <li><a href="./Login.html">LOGIN</a></li>
-        <li><a href="./signUp.html">SignUp</a></li>
-        <li><a href="./Mypage.html">My Pages</a></li>
+        <li><a href="../Login.html">LOGIN</a></li>
+        <li><a href="../signUp.html">SignUp</a></li>
+        <li><a href="../Mypage.html">My Pages</a></li>
       </ul>
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1><a href="./main.html"><img src=./images/Rogo.jpg></a></h1>
+        <h1><a href="../main.html"><img src=../images/Rogo.jpg></a></h1>
       </div>
       <input class="Header_input" type="text" placeholder="Search..." />
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
           Dog
           <span class="dropmenu">
-            <span><a href="./product/Snack.html">Snack</a></span>
-            <span><a href="./product/Supplies.html">Supplies</a></span>
-            <span><a href="./product/meal.html">meal</a></span>
+            <span><a href="../productCat/Snack.html">Snack</a></span>
+            <span><a href="../productCat/Supplies.html">Supplies</a></span>
+            <span><a href="../productCat/meal.html">meal</a></span>
           </span>
         </li>
         <li class="Cat_dropmenu">
           Cat
           <span class="dropmenu">
-            <span><a href="./productCat/Snack.html">Snack</a></span>
-            <span><a href="./productCat/Supplies.html">Supplies</a></span>
-            <span><a href="./productCat/meal.html">meal</a></span>
+            <span><a href="../productCat/Snack.html">Snack</a></span>
+            <span><a href="../productCat/Supplies.html">Supplies</a></span>
+            <span><a href="../productCat/meal.html">meal</a></span>
           </span>
         </li>
-        <li><a href="./EVENT/event.html">Event</a></li>
-        <li><a href="./Service/Service.html">Service</a></li>
+        <li><a href="../EVENT/event.html">Event</a></li>
+        <li><a href="../Service/Service.html">Service</a></li>
         <li class="Dog_dropmenu">
-          <a href="./Adopotion/Adoption.html"> Adoption</a>
+          <a href="../Adopotion/Adoption.html"> Adoption</a>
           <span class="dropmenu">
-            <span><a href="./Adopotion/dog.html">Cat</a></span>
-            <span><a href="./Adopotion/Cat.html">Dog</a></span>
+            <span><a href="../Adopotion/dog.html">Cat</a></span>
+            <span><a href="../Adopotion/Cat.html">Dog</a></span>
           </span>
         </li>
-        <li><a href="./NOTIC/Notice.html">Notice</a></li>
+        <li><a href="../NOTIC/Notice.html">Notice</a></li>
       </ul>
     </header>
 
-    <div class="Form">
-      <h1 class="Form_title">Login</h1>
-      <input class="Form_Login" type="text" placeholder="User Name" />
-      <input
-        class="Form_Password"
-        type="password"
-        placeholder="User password"
-      />
-      <button class="button_Login">Login</button>
-      <h3 class="Form_SignUP"><a href="signUp.html">Sign Up</a></h3>
-    </div>
     <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
@@ -101,5 +89,26 @@
         </ul>
       </div>
     </footer>
+    <script>
+      // Scroll Animation (sa, 스크롤 애니메이션)
+      const saTriggerMargin = 300;
+      const saElementList = document.querySelectorAll(".sa");
+
+      const saFunc = function () {
+        for (const element of saElementList) {
+          if (!element.classList.contains("show")) {
+            if (
+              window.innerHeight >
+              element.getBoundingClientRect().top + saTriggerMargin
+            ) {
+              element.classList.add("show");
+            }
+          }
+        }
+      };
+
+      window.addEventListener("load", saFunc);
+      window.addEventListener("scroll", saFunc);
+    </script>
   </body>
 </html>
