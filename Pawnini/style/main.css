@@ -617,12 +617,36 @@ body {
       padding-top: 300px;
       
   }
-
-  /*post slider*/
-  .slider{
-  margin-top: 110px;
-    margin-left: 15px;
+  .product{
+    border-radius: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 100px;
+    width: 80%;
+    margin-left: 150px;
   }
+  .store_ul{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 20px;
+      height: 300px;
+  }
+  .store_li_own{
+      background-image: url("../images/dog2.jpg");
+      background-position: center center;
+      background-size: cover;
+  }
+  .store_li_own :hover{
+      box-shadow: 10px 5px 5px rgba(0,0,0,0.8);
+      transition: box-shadow 0.5s  ease-in-out;
+  }
+  .store_li_two{
+      background-image: url("../images/dog3.jpg");
+      background-position: center center;
+
+
+      background-size: cover;
+  }
+      /*post slider*/
 .post-slider{
   width:70%;
   margin:0px auto;
