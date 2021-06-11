@@ -1,0 +1,708 @@
+*{
+  text-decoration: none;
+      color:inherit;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Login{
+  font-size: 20px;
+background-color: rgba(0,0,0,0.1);
+}
+
+.Login_ul{
+  display: flex;
+  font-size: 15px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+top:0px;
+z-index:1;
+list-style: none;
+
+}
+
+.Login_ul li{
+  padding: 10px;
+}
+
+.Title{
+  display: flex;
+justify-content: center;
+font-size: 40px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-top: 60px;
+margin-bottom: 10px;
+}
+.Header_input{
+  border-style: none;
+
+font-size: 25px;
+margin-bottom: 10px;
+outline :none;
+margin-left: 100px;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+padding: 0px 0px 10px 0px;
+}
+.Header_menu{
+z-index:1;
+
+}
+.Header_ul{
+  display: flex;
+position:sticky;
+height: 60px;
+  justify-content:space-around;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 50px;
+}
+
+.Header_ul li{
+  width:140px;
+  position:relative;
+font-size: 20px;
+font-weight:600;
+  color:black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.Header_ul li :hover{
+color:pink;
+transition: color 0.5s ease-in-out;
+}
+
+
+
+.Header_ul > li:hover > .dropmenu{
+  visibility: visible;
+}
+.Header_ul > li > .dropmenu{
+  width: 150px;
+  clear: both;
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+  text-align: left;
+  visibility: hidden;
+}
+.Header_ul > li > .dropmenu > span{
+  width: 100%;
+  display: inline-block;
+  padding-left: 20px;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+}
+.Header_ul > li > .dropmenu > span:hover{
+  font-weight: 700;
+  color:pink;
+  transition: color 0.5s ease-in-out;
+}
+.Dog_dropmenu{
+  height: 60px;
+  margin-top: 50px;
+}
+.Cat_dropmenu{
+  height: 60px;
+  margin-top: 50px;
+}
+
+.slider{
+  width: 97vw;
+}
+
+.slider-div{
+
+}
+.slider-div-image{
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+
+.Coment{
+  display: flex;
+  position: relative;
+
+border-top: 1px solid rgba(0,0,0,0.5);
+background-color: #F4F4F4;
+}
+.Coment_Ul{
+  color:black;
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+margin-right: 200px;
+
+}
+.Coment_span{
+  padding: 30px 0px 20px 0px;
+display: flex;
+font-size: 13px;
+color:rgba(0,0,0,0.5);
+}
+
+  .Store_Save{
+    margin-top: 300px;
+    width: 80%;
+    margin-left: 180px;
+  }
+  .Store_h1 {
+    display: flex;
+justify-content: start;
+align-items: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 50px;
+  font-size: 50px;
+
+  }
+  .Store_h3{
+}
+
+
+
+
+
+
+.advertisement_image{
+width: 100%;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+
+}
+
+.advertisement_h1{
+    display: flex;
+justify-content: center;
+align-items: center;
+  font-size: 150px;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 100px;
+
+}
+
+
+
+.leftMenu > li{
+    width: auto;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    
+}
+ .Header_ul > li:hover > .dropmenu{
+    visibility: visible;
+}
+ .Header_ul > li > .dropmenu{
+    width: 150px;
+    clear: both;
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    text-align: left;
+    visibility: hidden;
+}
+ .Header_ul > li > .dropmenu > span{
+    width: 100%;
+    display: inline-block;
+    padding-left: 20px;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+ .Header_ul > li > .dropmenu > span:hover{
+    font-weight: 700;
+    color:pink;
+    transition: color 0.5s ease-in-out;
+}
+.Dog_dropmenu{
+    height: 60px;
+    margin-top: 50px;
+}
+.Cat_dropmenu{
+    height: 60px;
+    margin-top: 50px;
+}
+.Header_ul li :hover{
+  color:pink;
+  transition: color 0.5s ease-in-out;
+}
+
+
+.Brand_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    font-size: 80px;
+    text-shadow:  6px 2px 2px gray;
+}
+.Brand_Section{
+  width: 100%;
+}
+
+.Brand_ul{
+ 
+}
+.Brand_ul li:nth-child(1){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+
+}
+
+.Brand_ul li:nth-child(2){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(3){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(4){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(5){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(6){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(7){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(8){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(9){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(10){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(11){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+
+.Brand_ul li:nth-child(12){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    
+    
+}
+.Coment{
+    position: relative;
+    display: flex;
+border-top: 1px solid rgba(0,0,0,0.5);
+background-color: #F4F4F4;
+}
+.Coment_Ul{
+    color:black;
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+margin-right: 200px;
+
+}
+.Coment_span{
+    padding: 30px 0px 20px 0px;
+display: flex;
+font-size: 13px;
+color:rgba(0,0,0,0.5);
+}
+
+
+
+body {
+    margin: 0px;
+  }
+  main {
+    padding-bottom: 100px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  section div {
+    width: 23%;
+    height: 300px;
+  }
+
+
+
+
+  /* Scroll Animation (sa, 스크롤 애니메이션) */
+  .sa {
+    transition: all 1.2s ease;
+  }
+
+  /* 아래에서 위로 페이드 인 */
+  .bener_last{
+    margin-top: 500px;
+  }
+  .sa-up {
+    font-size: 100px;
+    transform: translate(0, 100px);
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .Text_one{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-right: 130px;
+    transform: translate(0, 100px);
+    font-size: 70px;
+    border-radius: 10px;
+    text-shadow:  6px 2px 2px gray;
+
+  }
+  .sa-up_two{
+    font-size: 100px;
+    transform: translate(-100px, 0);
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .Text_two{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right:80px;
+  transform: translate(0, 100px);
+  font-size: 100px;
+  text-shadow:  6px 2px 2px gray;
+
+  }
+  .sa-up_two_last{
+    font-size: 100px;
+    transform: translate(-100px, 0);
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+  }
+  .Text_two_last{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  transform: translate(0, 100px);
+  font-size: 80px;
+  text-shadow:  6px 2px 2px gray;
+
+  }
+
+
+  .sa-up_own {
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin-left: 800px;
+    /* transform: translate(-100px, 0); */
+    transform: scale(0.5);
+
+  }
+  /* 위에서 아래로 페이드 인 */
+  .sa-down {
+      display: grid;
+      grid-template-columns:repeat(4,1fr) ;
+      gap: 10px;
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    transform: translate(0, -100px);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+    
+  }
+  .sa sa-down:hover{
+  }
+
+
+
+  /* 왼쪽에서 오른쪽으로 페이드 인 */
+  .sa-right {
+    transform: translate(-100px, 0);
+  }
+  /* 오른쪽에서 왼쪽으로 페이드 인 */
+  .sa-left {
+    transform: translate(100px, 0);
+  }
+  /* 왼쪽으로 회전하면서 페이드 인 */
+  .sa-rotateL {
+    transform: rotate(180deg);
+  }
+  /* 오른쪽으로 회전하면서 페이드 인 */
+
+  /* 작아진 상태에서 커지면서 페이드 인 */
+  .sa-scaleUp {
+    transform: scale(0.5);
+    
+  }
+  .sa-_brand{
+    display: grid;
+    grid-template-columns:repeat(5,150px) ;
+    grid-template-columns:repeat(2,150px) ;
+    gap: 10px;
+  background-image: url("../images/dog12.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  transform: scale(0.5);
+}
+
+  /* 커진 상태에서 작아지면서 페이드 인 */
+  .sa-scaleDown {
+    transform: scale(1.5);
+  }
+
+  .sa.show {
+    opacity: 1;
+    transform: none;
+  }
+
+  .bener_ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 200px;
+    padding-top: 150px;
+    margin-left: 100px;
+      
+  }
+  .bener_ul li{
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+    list-style: none;
+    text-decoration: none;
+  }
+  .bener_ul li:nth-child(1){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(2){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(3){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(4){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width:600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(5){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width: 600px;
+    height: 380px;
+  }
+  .bener_ul li:nth-child(6){
+    background-image: url("../images/dog12.jpg");
+    background-position: center center;
+    background-size: cover;
+     width: 600px;
+    height: 380px;
+  }
+
+  .bener_text{
+      margin-top: 900px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+      padding-top: 300px;
+      
+  }
+  .product{
+    border-radius: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 100px;
+    width: 80%;
+    margin-left: 150px;
+  }
+  .store_ul{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 20px;
+      height: 300px;
+  }
+  .store_li_own{
+      background-image: url("../images/dog2.jpg");
+      background-position: center center;
+      background-size: cover;
+  }
+  .store_li_own :hover{
+      box-shadow: 10px 5px 5px rgba(0,0,0,0.8);
+      transition: box-shadow 0.5s  ease-in-out;
+  }
+  .store_li_two{
+      background-image: url("../images/dog3.jpg");
+      background-position: center center;
+
+
+      background-size: cover;
+  }
+      /*post slider*/
+.post-slider{
+  width:70%;
+  margin:0px auto;
+  position:relative;
+}
+.post-slider .silder-title{
+  text-align:center;
+  margin:30px auto;
+}
+.post-slider .next{
+  position:absolute;
+  top:50%;
+  right:30px;
+  font-size:2em;
+  color:gray;
+  cursor: pointer;
+}
+.post-slider .prev{
+  position:absolute;
+  top:50%;
+  left:30px;
+  font-size:2em;
+  color:gray;
+    cursor: pointer;
+}
+.post-slider .post-wrapper{
+
+  width:84%;
+  height:350px;
+  margin:0px auto;
+  overflow: hidden;
+  padding:10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post{
+  width:300px;
+  height:300px;
+  margin:0px 10px;
+  display:inline-block;
+  background:white;
+  border-radius: 5px;
+}
+.post-slider .post-wrapper .post .post-info{
+  font-size:15px;
+  height:30%;
+  padding-left:10px;
+}
+.post-slider .post-wrapper .post .slider-image{
+  width:100%;
+  height:175px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+
+  
+  
+
+
+
+
