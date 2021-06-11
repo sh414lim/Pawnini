@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/Adoption.css" />
     <link rel="stylesheet" href="../style/event.css" />
     <title>Snack</title>
   </head>
@@ -51,12 +50,22 @@
       </ul>
     </header>
 
-    <h1>오늘의 이벤트</h1>
+    <h1 class="event_Title">오늘의 이벤트</h1>
       <div>
         <div class="event">
+
           <ul class="event_grid">
-            <li>오늘의 이벤트</li>
-            <li>2</li>
+
+            <li class="js-clock">
+              <h1>할인행사 남은시간!!</h1>
+              <h3>00:00</h3>
+            </li>
+
+            <li class="js-clock-two">
+            <h1>할인 남은 시간</h1>
+            <h4 class="js_clock_h4">00:00</h4>  
+            </li>
+
             <li>3</li>
             <li>4</li>
             <li>5</li>
@@ -130,5 +139,7 @@
       window.addEventListener("load", saFunc);
       window.addEventListener("scroll", saFunc);
     </script>
+    <script src="./clock.js"></script>
+    <script src="./clock2.js"></script>
   </body>
 </html>

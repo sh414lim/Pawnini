@@ -30,14 +30,15 @@ body{
 .product{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 180px;
+    
 }
 .product_ul{
 display: grid;
 flex-wrap: wrap;
-gap:45px;
-grid-template-columns: repeat(5,250px);
+gap:80px;
+grid-template-columns: repeat(5,1fr);
 grid-template-rows:repeat(4,300px) ;
+
 }
 
 .product_img{
@@ -45,7 +46,6 @@ grid-template-rows:repeat(4,300px) ;
     flex-wrap: wrap;
     width: 180px;
     height: 180px;
-    margin-left: 40px;
     margin-top: 30px;
 }
 .product_li :hover{
