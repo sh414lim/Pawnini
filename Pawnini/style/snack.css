@@ -1,4 +1,5 @@
 body{
+   
 }
 
 .Table{
@@ -30,9 +31,12 @@ body{
 .product{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 230px;
     
 }
 .product_ul{
+    text-decoration: none;
+    list-style: none;
 display: grid;
 flex-wrap: wrap;
 gap:80px;
