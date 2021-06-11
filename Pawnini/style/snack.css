@@ -31,7 +31,6 @@ body{
 .product{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 230px;
     
 }
 .product_ul{
