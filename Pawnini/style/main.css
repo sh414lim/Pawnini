@@ -65,6 +65,7 @@ font-size: 20px;
 font-weight:600;
   color:black;
   opacity: 0.8;
+  z-index: 1;
 }
 
 .Header_ul li :hover{
@@ -618,6 +619,10 @@ body {
   }
 
   /*post slider*/
+  .slider{
+  margin-top: 110px;
+    margin-left: 15px;
+  }
 .post-slider{
   width:70%;
   margin:0px auto;
