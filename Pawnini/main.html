@@ -8,8 +8,11 @@
     <title>PawNiNi</title>
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
   </head>
   <body>
@@ -57,52 +60,16 @@
         <li><a href="./NOTIC/Notice.html">Notice</a></li>
       </ul>
     </header>
-    <div class="page-wrapper" style="position: relative">
-      <!--page slider -->
-      <div class="post-slider">
-        <h1 class="silder-title">Trending Posts</h1>
-        <i class="fas fa-chevron-left prev"></i> //왼쪽 방향 버튼
-        <i class="fas fa-chevron-right next"></i> //오른쪽 방향 버튼
-        <div class="post-wrapper">
-          <div class="post">
-            <img src="./images/dog10.jpg" class="slider-image" />
-            <div class="post-info">
-              <h4>
-                <a href="#" class="post-subject"
-                  >Lorem ipsu eiusmod tempor incididunt ut
-                </a>
-              </h4>
-              <i class="far fa-user" style="height: 10%">Awa Melvine</i>
-            </div>
-          </div>
-          <div class="post">
-            <img src="./images/dog10.jpg" class="slider-image" />
-            <div class="post-info">
-              <h4><a href="#"> Commodo odio aenean sed </a></h4>
-              <i class="far fa-user" style="height: 10%">Awa Melvine</i>
-            </div>
-          </div>
-          <div class="post">
-            <img src="./images/dog10.jpg" class="slider-image" />
-            <div class="post-info">
-              <h4>
-                <a href="#"
-                  >Quis hendrerit dolor magna eget est lorem ipsum dolor sit.
-                </a>
-              </h4>
-              <i class="far fa-user" style="height: 10%">Awa Melvine</i>
-            </div>
-          </div>
-          <div class="post">
-            <img src="./images/dog10.jpg" class="slider-image" />
-            <div class="post-info">
-              <h4><a href="#">Elit at imperdiet dui accumsan sit.</a></h4>
-              <i class="far fa-user" style="height: 10%">Awa Melvine</i>
-            </div>
-          </div>
-        </div>
+    <!-- stlye 은 slick 영역 확인용 -->
+    <div class="slider">
+      <div id="slider-div">
+        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
       </div>
-      <!--post slider-->
     </div>
 
     <main>
@@ -211,45 +178,46 @@
       window.addEventListener("load", saFunc);
       window.addEventListener("scroll", saFunc);
     </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
-      $(".responsive").slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true,
+      $(function () {
+        $("#slider-div").slick({
+          slide: "div", //슬라이드 되어야 할 태그 ex) div, li
+          infinite: true, //무한 반복 옵션
+          slidesToShow: 1, // 한 화면에 보여질 컨텐츠 개수
+          slidesToScroll: 1, //스크롤 한번에 움직일 컨텐츠 개수
+          speed: 1000, // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+          arrows: true, // 옆으로 이동하는 화살표 표시 여부
+          dots: true, // 스크롤바 아래 점으로 페이지네이션 여부
+          autoplay: true, // 자동 스크롤 사용 여부
+          autoplaySpeed: 3000, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+          pauseOnHover: true, // 슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
+          vertical: false, // 세로 방향 슬라이드 옵션
+          prevArrow:
+            "<button type='button' class='slick-prev'>Previous</button>", // 이전 화살표 모양 설정
+          nextArrow: "<button type='button' class='slick-next'>Next</button>", // 다음 화살표 모양 설정
+          dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
+          draggable: true, //드래그 가능 여부
+
+          responsive: [
+            // 반응형 웹 구현 옵션
+            {
+              breakpoint: 960, //화면 사이즈 960px
+              settings: {
+                //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                slidesToShow: 3,
+              },
             },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+            {
+              breakpoint: 768, //화면 사이즈 768px
+              settings: {
+                //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                slidesToShow: 2,
+              },
             },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ],
+          ],
+        });
       });
     </script>
   </body>

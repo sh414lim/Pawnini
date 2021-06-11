@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/Adoption.css" />
+    <link rel="stylesheet" href="../style/service.css" />
     <title>Snack</title>
   </head>
   <body>
@@ -49,6 +50,29 @@
         <li><a href="../NOTIC/Notice.html">Notice</a></li>
       </ul>
     </header>
+
+    <div class="event_effect01">
+      <ul class="s1_slide">
+        <li class="list1 on">
+          <h3 class="t_txt">carina</h3>
+          <p class="s_txt">티스토리 블로그</p>
+        </li>
+        <li class="list2">
+          <h3 class="t_txt">carina</h3>
+          <p class="s_txt">클릭했을때 아래 아래 화살표 사라짐~~</p>
+        </li>
+        <li class="list3">
+          <h3 class="t_txt">carina</h3>
+          <p class="s_txt">border 왼 -> 오~~</p>
+        </li>
+        <li class="list4">
+          <h3 class="t_txt">carina</h3>
+          <p class="s_txt">
+            클릭했을때 가로 넓어지면서 배경색 opacity 조절해서 밝아짐~~
+          </p>
+        </li>
+      </ul>
+    </div>
 
     <footer>
       <div class="Coment">
@@ -109,6 +133,14 @@
 
       window.addEventListener("load", saFunc);
       window.addEventListener("scroll", saFunc);
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".s1_slide > li").click(function () {
+          $(this).addClass("on");
+          $(".s1_slide > li").not(this).removeClass("on");
+        });
+      });
     </script>
   </body>
 </html>
