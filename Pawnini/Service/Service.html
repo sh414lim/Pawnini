@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/Adoption.css" />
     <link rel="stylesheet" href="../style/service.css" />
+ <link rel="stylesheet" href="../style/event.css" />
+
     <title>Snack</title>
   </head>
   <body>
@@ -52,30 +54,35 @@
         <li><a href="../NOTIC/Notice.html">Notice</a></li>
       </ul>
     </header>
-    <h1>공사중</h1>
-    <div class="event_effect01">
-      <ul class="s1_slide">
-        <li class="list1 on">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">티스토리 블로그</p>
-        </li>
-        <li class="list2">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">클릭했을때 아래 아래 화살표 사라짐~~</p>
-        </li>
-        <li class="list3">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">border 왼 -> 오~~</p>
-        </li>
-        <li class="list4">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">
-            클릭했을때 가로 넓어지면서 배경색 opacity 조절해서 밝아짐~~
-          </p>
-        </li>
-      </ul>
+ 
+	<div align="center">
+		<h1>분양글 게시판</h1>
+		<table border="1">
+			<c:forEach items="${adoptionList}" var="adoption">
+			<tr>
+				<td>${adoption.adoption_f_image}
+				<td><a href="getAdoption.do?adoption_id=${adoption.adoption_id}">
+				${adoption.adoption_title}
+				</a>
+			</c:forEach>
+		</table>	
+		<a href="goInsert.do">등록</a>
+	</div>
+  <body>
+    <div align="center">
+      <h1>분양글 게시판</h1>
+      <table border="1">
+        <c:forEach items="${adoptionList}" var="adoption">
+        <tr>
+          <td>${adoption.adoption_f_image}
+          <td><a href="getAdoption.do?adoption_id=${adoption.adoption_id}">
+          ${adoption.adoption_title}
+          </a>
+        </c:forEach>
+      </table>	
+      <a href="goInsert.do">등록</a>
     </div>
-
+  </body>
     <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
