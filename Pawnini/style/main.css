@@ -3,6 +3,10 @@
       color:inherit;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+body{
+min-width: 1500px;
+
+}
 .Login{
   font-size: 20px;
 background-color: rgba(0,0,0,0.1);
@@ -33,14 +37,15 @@ margin-top: 60px;
 margin-bottom: 10px;
 }
 .Header_input{
+  display: flex;
   border-style: none;
-
 font-size: 25px;
 margin-bottom: 10px;
 outline :none;
-margin-left: 100px;
+margin-left: 1000px;
 border-bottom: 1px solid rgba(0,0,0,0.1);
 padding: 0px 0px 10px 0px;
+width: 20%;
 }
 .Header_menu{
 z-index:1;
@@ -86,6 +91,8 @@ transition: color 0.5s ease-in-out;
   margin-top: 50px;
   text-align: left;
   visibility: hidden;
+  background-color: pink;
+  border-radius: 10px;
 }
 .Header_ul > li > .dropmenu > span{
   width: 100%;
@@ -94,13 +101,12 @@ transition: color 0.5s ease-in-out;
   color: black;
   font-weight: 600;
   padding: 10px;
-  border: 1px solid gray;
   z-index: 1;
 
 }
 .Header_ul > li > .dropmenu > span:hover{
   font-weight: 700;
-  color:pink;
+  color:white;
   transition: color 0.5s ease-in-out;
 }
 .Dog_dropmenu{
@@ -125,6 +131,8 @@ transition: color 0.5s ease-in-out;
   width: 100%;
   height: 500px;
 }
+
+
 
 
 .Coment{
@@ -193,53 +201,6 @@ align-items: center;
 
 
 
-.leftMenu > li{
-    width: auto;
-    padding: 0 20px;
-    height: 100%;
-    line-height: 60px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    
-}
- .Header_ul > li:hover > .dropmenu{
-    visibility: visible;
-}
- .Header_ul > li > .dropmenu{
-    width: 150px;
-    clear: both;
-    position: absolute;
-    left: 0;
-    margin-top: 50px;
-    text-align: left;
-    visibility: hidden;
-}
- .Header_ul > li > .dropmenu > span{
-    width: 100%;
-    display: inline-block;
-    padding-left: 20px;
-    color: black;
-    font-weight: 600;
-    padding: 10px;
-}
- .Header_ul > li > .dropmenu > span:hover{
-    font-weight: 700;
-    color:pink;
-    transition: color 0.5s ease-in-out;
-}
-.Dog_dropmenu{
-    height: 60px;
-    margin-top: 50px;
-}
-.Cat_dropmenu{
-    height: 60px;
-    margin-top: 50px;
-}
-.Header_ul li :hover{
-  color:pink;
-  transition: color 0.5s ease-in-out;
-}
 
 
 .Brand_text{
@@ -255,7 +216,6 @@ align-items: center;
 }
 
 .Brand_ul{
- 
 }
 .Brand_ul li:nth-child(1){
     background-image: url("../images/dog12.jpg");
@@ -626,7 +586,15 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.1);
     padding-bottom: 100px;
     width: 80%;
-    margin-left: 150px;
+    margin-left: 50px;
+  }
+  .slider{
+    z-index: -1;
+    margin-top: 100px;
+    margin-left: 15px;
+  }
+  #slider-div{
+    z-index: -1;
   }
   .store_ul{
       display: grid;
