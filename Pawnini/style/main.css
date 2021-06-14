@@ -80,14 +80,19 @@ font-weight:600;
 }
 
 .Header_ul li :hover{
-color:white;
-transition: color 0.5s ease-in-out;
+color:pink;
+transition:color 0.5s ease-in-out;
+
 }
 
 
 
 .Header_ul > li:hover > .dropmenu{
   visibility: visible;
+  color:black
+  
+ 
+
 }
 .Header_ul > li > .dropmenu{
   width: 150px;
@@ -97,8 +102,9 @@ transition: color 0.5s ease-in-out;
   margin-top: 50px;
   text-align: left;
   visibility: hidden;
-  background-color: pink;
+  background-color: rgba(0,0,0,0.1);
   border-radius: 10px;
+  opacity: 0.7;
 }
 .Header_ul > li > .dropmenu > span{
   width: 100%;
@@ -112,7 +118,7 @@ transition: color 0.5s ease-in-out;
 }
 .Header_ul > li > .dropmenu > span:hover{
   font-weight: 700;
-  color:white;
+  color:black;
   transition: color 0.5s ease-in-out;
 }
 .Dog_dropmenu{
