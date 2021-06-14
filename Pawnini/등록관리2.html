@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+		
+		<h1> 등록 동물 관리 </h1>
+		<table border="1" width="1000">
+			<tr>
+				<td bgcolor="orange">등록번호
+				<td bgcolor="orange">사진
+				<td bgcolor="orange">1차분류
+				<td bgcolor="orange">2차분류
+				<td bgcolor="orange">이름
+				<td bgcolor="orange">나이
+				<td bgcolor="orange">성별
+				<td bgcolor="orange">중성화여부
+				<td bgcolor="orange">건강
+				<td bgcolor="orange">등록일시
+				<td bgcolor="orange" colspan="2">
+				
+			<c:forEach items="${pawsList}" var="paws">
+			<tr>
+				<td>${paws.paws_id}
+				<td><img src="${paws.paws_thumb_img}" class="thu_img">	
+				<td>${paws.paws_f_code}	
+				<td>${paws.paws_s_code}
+				<td>${paws.paws_name}
+				<td>${paws.paws_age}
+				<td>${paws.paws_sex}
+				<td>${paws.paws_is_neutered}
+				<td>${paws.paws_health}
+				<td>${paws.paws_regdate}
+				<td><a href="getPaws.do?paws_id=${paws.paws_id}">수정</a>
+				<td><a href="deletePaws.do?paws_id=${paws.paws_id}">삭제</a>
+			</c:forEach>
+		</table>
+		<a href="goInsertPaws.do">신규 등록</a><br>
+		<a href="getPawsList.do">분양페이지</a>
+	</div>
+</body>
+</html>

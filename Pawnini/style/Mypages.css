@@ -29,7 +29,7 @@ body{
   /* 녹색배경 */
   .greenContainer{  
     height: 132px;
-    background-color: #24855b;    
+    background-color:pink;    
     
     display: flex;
     align-items: flex-end;

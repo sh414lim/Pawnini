@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="insertPaws.do" method="post" enctype="multipart/form-data">
+        <table border="1">
+          <tr>
+            <td>
+              1차분류
+              <select name="paws_f_code">
+                <option value="강아지">강아지</option>
+                <option value="고양이">고양이</option>
+              </select>
+              <tr>
+                <td>
+                  2차분류<input type="text" name="paws_s_code" />
+                  <tr>
+                    <td>
+                      이름<input type="text" name="paws_name" />
+                      <tr>
+                        <td>
+                          나이<input type="text" name="paws_age" />
+                          <tr>
+                            <td>
+                              <div class="inputArea">
+                                <label for="paws_img">이미지</label>
+                                <input type="file" id="paws_img" name="file" />
+                                <tr>
+                                  <td>
+                                    미리보기
+                                    <div class="select_img"><img src="" /></div>
+                                  </td>
+                                </tr>
+                              </div>
+
+                              <tr>
+                                <td>
+                                  설명<input type="text" name="paws_desc" />
+                                  <tr>
+                                    <td>
+                                      성별<input type="text" name="paws_sex" />
+                                      <tr>
+                                        <td>
+                                          중성화여부
+                                          <select name="paws_is_neutered">
+                                            <option value="Y">Y</option>
+                                            <option value="N">N</option>
+                                          </select>
+                                          <tr>
+                                            <td>
+                                              건강상태<input
+                                                type="text"
+                                                name="paws_health"
+                                              />
+                                              <tr>
+                                                <td>
+                                                  <input
+                                                    type="submit"
+                                                    value="등록"
+                                                  />
+                                                </td>
+                                              </tr>
+                                            </td>
+                                          </tr>
+                                        </td>
+                                      </tr>
+                                    </td>
+                                  </tr>
+                                </td>
+                              </tr>
+                            </td>
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <br />
+      <a href="getPawsList.do">목록</a>
+    </div>
+  </body>
+</html>
