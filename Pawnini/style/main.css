@@ -36,6 +36,12 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 margin-top: 60px;
 margin-bottom: 10px;
 }
+.basket{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-right: 130px;
+}
 .Header_input{
   display: flex;
   border-style: none;
