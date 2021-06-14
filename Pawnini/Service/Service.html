@@ -1,148 +1,122 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/Adoption.css" />
-    <link rel="stylesheet" href="../style/service.css" />
-    <title>Snack</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- 뷰포트 -->
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <!-- 스타일시트 참조 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>게시판 웹 사이트</title>
   </head>
   <body>
-    <div class="Login">
-      <ul class="Login_ul">
-        <li><a href="../Login.html">LOGIN</a></li>
-        <li><a href="../signUp.html">SignUp</a></li>
-        <li><a href="../Mypage.html">My Pages</a></li>
-      </ul>
-    </div>
-    <header class="Header_menu">
-      <div class="Title">
-        <h1><a href="../main.html"><img src=../images/Rogo.jpg></a></h1>
+    <% String userID = null; if(session.getAttribute("userID") != null) { userID
+    = (String) session.getAttribute("userID"); } %>
+
+    <!-- 네비게이션 -->
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"
+          aria-expaned="false"
+        >
+          <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="main.jsp">JSP 게시판</a>
       </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
-      <ul class="Header_ul">
-        <li class="Dog_dropmenu">
-          Dog
-          <span class="dropmenu">
-            <span><a href="../productCat/Snack.html">Snack</a></span>
-            <span><a href="../productCat/Supplies.html">Supplies</a></span>
-            <span><a href="../productCat/meal.html">meal</a></span>
-          </span>
-        </li>
-        <li class="Cat_dropmenu">
-          Cat
-          <span class="dropmenu">
-            <span><a href="../productCat/Snack.html">Snack</a></span>
-            <span><a href="../productCat/Supplies.html">Supplies</a></span>
-            <span><a href="../productCat/meal.html">meal</a></span>
-          </span>
-        </li>
-        <li><a href="../EVENT/event.html">Event</a></li>
-        <li><a href="../Service/Service.html">Service</a></li>
-        <li class="Dog_dropmenu">
-          <a href="../Adopotion/Adoption.html"> Adoption</a>
-          <span class="dropmenu">
-            <span><a href="../Adopotion/dog.html">Cat</a></span>
-            <span><a href="../Adopotion/Cat.html">Dog</a></span>
-          </span>
-        </li>
-        <li><a href="../NOTIC/Notice.html">Notice</a></li>
-      </ul>
-    </header>
-    <h1>공사중</h1>
-    <div class="event_effect01">
-      <ul class="s1_slide">
-        <li class="list1 on">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">티스토리 블로그</p>
-        </li>
-        <li class="list2">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">클릭했을때 아래 아래 화살표 사라짐~~</p>
-        </li>
-        <li class="list3">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">border 왼 -> 오~~</p>
-        </li>
-        <li class="list4">
-          <h3 class="t_txt">carina</h3>
-          <p class="s_txt">
-            클릭했을때 가로 넓어지면서 배경색 opacity 조절해서 밝아짐~~
-          </p>
-        </li>
-      </ul>
+
+      <div class="collapsenavbar-collapse" id="#bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="main.jsp">메인</a></li>
+          <li class="active"><a href="bbs.jsp">게시판</a></li>
+        </ul>
+
+        <% if(userID == null){ %>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >접속하기<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="Lee.jsp">로그인</a></li>
+              <li><a href="join.jsp">회원가입</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <% } else { %>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >회원 관리<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="logoutAction.jsp">로그아웃</a></li>
+            </ul>
+          </li>
+        </ul>
+        <% } %>
+      </div>
+    </nav>
+
+    <!-- 게시판 -->
+    <div class="container">
+      <div class="row">
+        <table
+          class="table table-striped"
+          style="text-align: center; border: 1px solid #dddddd"
+        >
+          <thead>
+            <tr>
+              <th style="background-color: #eeeeee; text-align: center">
+                번호
+              </th>
+              <th style="background-color: #eeeeee; text-align: center">
+                제목
+              </th>
+              <th style="background-color: #eeeeee; text-align: center">
+                작성자
+              </th>
+              <th style="background-color: #eeeeee; text-align: center">
+                작성일
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>안녕하세요.</td>
+              <td>홍길동</td>
+              <td>2020-06-17</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+      </div>
     </div>
 
-    <footer>
-      <div class="Coment">
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
+    <!-- 애니매이션 담당 JQUERY -->
 
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
+    <!-- 부트스트랩 JS  -->
 
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <script>
-      // Scroll Animation (sa, 스크롤 애니메이션)
-      const saTriggerMargin = 300;
-      const saElementList = document.querySelectorAll(".sa");
-
-      const saFunc = function () {
-        for (const element of saElementList) {
-          if (!element.classList.contains("show")) {
-            if (
-              window.innerHeight >
-              element.getBoundingClientRect().top + saTriggerMargin
-            ) {
-              element.classList.add("show");
-            }
-          }
-        }
-      };
-
-      window.addEventListener("load", saFunc);
-      window.addEventListener("scroll", saFunc);
-    </script>
-    <script>
-      $(document).ready(function () {
-        $(".s1_slide > li").click(function () {
-          $(this).addClass("on");
-          $(".s1_slide > li").not(this).removeClass("on");
-        });
-      });
-    </script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

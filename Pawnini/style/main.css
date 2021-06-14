@@ -74,7 +74,7 @@ font-weight:600;
 }
 
 .Header_ul li :hover{
-color:pink;
+color:white;
 transition: color 0.5s ease-in-out;
 }
 
@@ -359,6 +359,7 @@ body {
   /* Scroll Animation (sa, 스크롤 애니메이션) */
   .sa {
     transition: all 1.2s ease;
+    opacity: 0;
   }
 
   /* 아래에서 위로 페이드 인 */
@@ -687,7 +688,7 @@ body {
 
   
   
-
+/* @media */
 
 
 

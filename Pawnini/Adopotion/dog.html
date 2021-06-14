@@ -21,7 +21,150 @@
     <header class="Header_menu">
       <div class="Title">
         <h1>
-          <a href="./main.html"><img src="./images/Rogo.jpg" /></a>
+          <a href="./main.html"><img src="./images/<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/AdoptionCat.css" />
+        <title>Snack</title>
+      </head>
+    
+      <body>
+        <div class="Login">
+          <ul class="Login_ul">
+            <li><a href="../Login.html">LOGIN</a></li>
+            <li><a href="../signUp.html">SignUp</a></li>
+            <li><a>My Pages</a></li>
+          </ul>
+        </div>
+        <header class="Header_menu">
+          <div class="Title">
+            <h1><a href="../main.html"><img src=../images/Rogo.jpg></a></h1>
+          </div>
+          <input class="Header_input" type="text" placeholder="Search..." />
+          <ul class="Header_ul">
+            <li class="Dog_dropmenu">
+              Dog
+              <span class="dropmenu">
+                <span><a href="../productCat/Snack.html">Snack</a></span>
+                <span><a href="../productCat/Supplies.html">Supplies</a></span>
+                <span><a href="../productCat/meal.html">meal</a></span>
+              </span>
+            </li>
+            <li class="Cat_dropmenu">
+              Cat
+              <span class="dropmenu">
+                <span><a href="../productCat/Snack.html">Snack</a></span>
+                <span><a href="../productCat/Supplies.html">Supplies</a></span>
+                <span><a href="../productCat/meal.html">meal</a></span>
+              </span>
+            </li>
+            <li><a href="../EVENT/event.html">Event</a></li>
+            <li><a href="../Service/Service.html">Service</a></li>
+            <li class="Dog_dropmenu">
+              <a href="../Adopotion/Adoption.html"> Adoption</a>
+              <span class="dropmenu">
+                <span><a href="../Adopotion/dog.html">Cat</a></span>
+                <span><a href="../Adopotion/Cat.html">Dog</a></span>
+              </span>
+            </li>
+            <li><a href="../NOTIC/Notice.html">Notice</a></li>
+          </ul>
+        </header>
+    
+        <h1 class="event_Title">Dog</h1>
+          <div>
+            <div class="event">
+              <ul class="event_grid">
+                <li class="js-clock">
+                </li>
+                </li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>10</li>
+                <li>10</li>
+                <li>10</li>
+                <li>10</li>
+              </ul>
+          </div>
+    
+          <!-- <%@ include file="../include/Footer.jsp" %> -->
+    
+        <footer>
+          <div class="Coment">
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+    
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+    
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+    
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <script>
+          // Scroll Animation (sa, 스크롤 애니메이션)
+          const saTriggerMargin = 300;
+          const saElementList = document.querySelectorAll(".sa");
+    
+          const saFunc = function () {
+            for (const element of saElementList) {
+              if (!element.classList.contains("show")) {
+                if (
+                  window.innerHeight >
+                  element.getBoundingClientRect().top + saTriggerMargin
+                ) {
+                  element.classList.add("show");
+                }
+              }
+            }
+          };
+    
+          window.addEventListener("load", saFunc);
+          window.addEventListener("scroll", saFunc);
+        </script>
+        <script src="./clock.js"></script>
+        <script src="./clock2.js"></script>
+      </body>
+    </html>
+    Rogo.jpg" /></a>
         </h1>
       </div>
       <input class="Header_input" type="text" placeholder="Search..." />
