@@ -94,6 +94,9 @@ transition: color 0.5s ease-in-out;
   color: black;
   font-weight: 600;
   padding: 10px;
+  border: 1px solid gray;
+  z-index: 1;
+
 }
 .Header_ul > li > .dropmenu > span:hover{
   font-weight: 700;
@@ -107,6 +110,7 @@ transition: color 0.5s ease-in-out;
 .Cat_dropmenu{
   height: 60px;
   margin-top: 50px;
+
 }
 
 .slider{
@@ -650,11 +654,14 @@ body {
 .post-slider{
   width:70%;
   margin:0px auto;
-  position:relative;
+  position:absolute;
+  z-index: 0;
 }
 .post-slider .silder-title{
   text-align:center;
   margin:30px auto;
+  z-index: 0;
+
 }
 .post-slider .next{
   position:absolute;
@@ -663,6 +670,8 @@ body {
   font-size:2em;
   color:gray;
   cursor: pointer;
+  z-index: 0;
+
 }
 .post-slider .prev{
   position:absolute;
@@ -671,6 +680,8 @@ body {
   font-size:2em;
   color:gray;
     cursor: pointer;
+  z-index: 0;
+
 }
 .post-slider .post-wrapper{
 
@@ -679,6 +690,8 @@ body {
   margin:0px auto;
   overflow: hidden;
   padding:10px 0px 10px 0px;
+  z-index: 0;
+
 }
 .post-slider .post-wrapper .post{
   width:300px;
@@ -692,12 +705,16 @@ body {
   font-size:15px;
   height:30%;
   padding-left:10px;
+  z-index: 0;
+
 }
 .post-slider .post-wrapper .post .slider-image{
   width:100%;
   height:175px;
   border-top-left-radius:5px;
   border-top-right-radius:5px;
+  z-index: 0;
+
 }
 
   

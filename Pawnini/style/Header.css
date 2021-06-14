@@ -71,12 +71,14 @@ font-weight:600;
 .Header_ul li :hover{
 color:pink;
 transition: color 0.5s ease-in-out;
+
 }
 
 
 
 .Header_ul > li:hover > .dropmenu{
   visibility: visible;
+
 }
 .Header_ul > li > .dropmenu{
   width: 150px;
@@ -86,6 +88,7 @@ transition: color 0.5s ease-in-out;
   margin-top: 50px;
   text-align: left;
   visibility: hidden;
+
 }
 .Header_ul > li > .dropmenu > span{
   width: 100%;
@@ -103,6 +106,7 @@ transition: color 0.5s ease-in-out;
 .Dog_dropmenu{
   height: 60px;
   margin-top: 50px;
+
 }
 .Cat_dropmenu{
   height: 60px;
