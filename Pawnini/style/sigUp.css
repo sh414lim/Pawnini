@@ -1,150 +1,127 @@
-body{
-    height: 100vh;
+@CHARSET "UTF-8";
 
-}
-.User{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.1);
-    width: 50%;
-    height: auto;
-    margin-top: 100px;
-    margin-left: 360px;
-    box-shadow:  3px 3px rgba(0,0,0,0.8), -1em 0 .4em rgba(0,0,0,0.3);
-    border-radius: 25px;
-    margin-bottom: 300px;
-}
-body{
-    height: 200vh;
+::-ms-input-placeholder {
+   color: #a8a8a8;
 }
 
-.User_text{
-    display: inline-flex;
-    justify-content: flex-start;
-    margin-right: 350px;
-    font-weight: 600;
+::-webkit-input-placeholder {
+   color: #a8a8a8;
 }
+
+::-moz-placeholder {
+   color: #a8a8a8;
+}
+.text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 35px;
+   font-weight: 600px;
+}
+
+#f1rm{
+ 
+}
+
+body {
+   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial,
+      sans-serif;
+   font-size: 13px;
+   background: #fff;
+}
+
+h1 {
+   width: 100%;
+   margin: 0px auto;
+   text-align: center;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+#sign {
+   position: relative;
+   top: 10px;
+   left: 880px;
    
-.User_title{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 60px;
+}
+
+th {
+   text-align: left;
+}
+
+.Form_section{
     
 }
-.User_name{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_Password{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_nickname{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_email{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_phone{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_card_id{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_card_come{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_postcode{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_f_addr{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.User_s_addr{
-    width: 400px;
-    height: 60px;
-    font-size: 25px;
-    border:none;
-    border-bottom:2px solid rgba(0,0,0,0.3);
-    outline:none;
-    border-radius: 15px;
-    margin-bottom: 15px;
-
-}
-.User_Button{
-    width: 300px;
-    height: 50px;
-    background-color: white;
-    margin-top: 50px;
-    font-size: 20px;
-    margin-bottom: 15px;
+#f1rm{
+    background-color:rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin-right: 150px;
     border-radius: 10px;
+    margin-left: 200px;
+    height: 100%;
+}
+#f1rm th{
+    font-size: 15px;
+    padding-top: 30px;
+
+}
+.term_btn {
+   text-align: right;
 }
 
-.User_Button :hover{
-    opacity: 0.5;
+.input {
+    width: 500px;
+    padding: 25px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+   opacity: 0.7;
+   font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    border: none;
+    border-radius: 5px;
+
+}
+.button_register{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+}
+
+
+select, input[type=button] {
+   height: 29px;
+}
+
+input[type=button] {
+   border: none;
+   background-color: #7FB3FA;
+   color: white;
+}
+
+input[type=button]:hover {
+   border: none;
+   background-color: #9CCEFF;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+   outline: none !important;
+   border: 2px solid #9CCEFF;
+}
+
+select:focus {
+   outline: none ;
+   border: 1px solid #9CCEFF;
 }

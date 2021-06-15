@@ -9,118 +9,177 @@
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
-    <div class="Login">
-      <ul class="Login_ul">
-        <li><a href="./Login.html">LOGIN</a></li>
-        <li><a href="./signUp.html">SignUp</a></li>
-        <li><a href="./Mypage.html">My Pages</a></li>
-      </ul>
-    </div>
-    <header class="Header_menu">
-      <div class="Title">
-        <h1><a href="./main.html"><img src=./images/Rogo.jpg></a></h1>
-      </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
-      <ul class="Header_ul">
-        <li class="Dog_dropmenu">
-          Dog
-          <span class="dropmenu">
-            <span><a href="./product/Snack.html">Snack</a></span>
-            <span><a href="./product/Supplies.html">Supplies</a></span>
-            <span><a href="./product/meal.html">meal</a></span>
-          </span>
-        </li>
-        <li class="Cat_dropmenu">
-          Cat
-          <span class="dropmenu">
-            <span><a href="./productCat/Snack.html">Snack</a></span>
-            <span><a href="./productCat/Supplies.html">Supplies</a></span>
-            <span><a href="./productCat/meal.html">meal</a></span>
-          </span>
-        </li>
-        <li><a href="./EVENT/event.html">Event</a></li>
-        <li><a href="./Service/Service.html">Service</a></li>
-        <li class="Dog_dropmenu">
-          <a href="./Adopotion/Adoption.html"> Adoption</a>
-          <span class="dropmenu">
-            <span><a href="./Adopotion/dog.html">Cat</a></span>
-            <span><a href="./Adopotion/Cat.html">Dog</a></span>
-          </span>
-        </li>
-        <li><a href="./NOTIC/Notice.html">Notice</a></li>
-      </ul>
-    </header>
-    <h1>공사중</h1>
-    <div class="User">
-      <h1 class="User_title">Sign Up</h1>
-      <h3 class="User_text">이름*</h3>
-      <input class="User_name" type="text" placeholder="User Name" />
-      <h3 class="User_text">비밀번호*</h3>
-      <input
-        class="User_Password"
-        type="password"
-        placeholder="User password"
-      />
-      <h3 class="User_text">닉네임*</h3>
-      <input class="User_nickname" type="text" placeholder="User Nick Name" />
-      <h3 class="User_text">이메일*</h3>
-      <input class="User_email" type="email" placeholder="User Email" />
-      <h3 class="User_text">전화번호*</h3>
-      <input class="User_phone" type="tel" placeholder="User Phone" />
-      <h3 class="User_text">카드</h3>
-      <input class="User_card_id" type="text" placeholder="User Card" />
-      <h3 class="User_text">카드번호</h3>
-      <input class="User_card_come" type="text" placeholder="User CardNumber" />
-      <h3 class="User_text">우편번호</h3>
-      <input class="User_postcode" type="text" placeholder="User PostNumber" />
-      <h3 class="User_text">주소*</h3>
-      <input class="User_f_addr" type="text" placeholder="User Address" />
-      <h3 class="User_text">상세주소*</h3>
-      <input
-        class="User_s_addr"
-        type="text"
-        placeholder="User Detail Address"
-      />
-      <button class="User_Button">Sign Up</button>
-    </div>
-    <footer>
-      <div class="Coment">
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
-
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
-
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
-
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <h2 class="text" align="center">회원가입</h2>
+    <section class="Form_section">
+      <form name="f1rm" id="f1rm">
+        <table align="center">
+          <tr>
+            <th>아이디</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="member_id" class="input" onFocus="" />
+              <input
+                type="button"
+                onClick="idChk()"
+                style="cursor: pointer"
+                value="중복확인"
+              /><br />
+              <label id="idchk"></label>
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                id="member_pwd"
+                class="input"
+                maxlength="20"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th>비밀번호 확인</th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                id="chk_member_pwd"
+                class="input"
+                maxlength="20"
+              />
+              <label id="checkPasswd"></label>
+            </td>
+          </tr>
+          <tr>
+            <th>이름</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="member_name" class="input" /><br />
+              <label id="chkname"></label>
+              <tr>
+                <th>닉네임</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" id="member_nickname" class="input" /><br />
+                </td>
+              </tr>
+              <tr>
+                <th>이메일</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" size="15" id="email_id" class="input" /> @
+                  <input
+                    type="text"
+                    size="15"
+                    id="email_addr"
+                    class="input"
+                    disabled
+                  />
+                  <select id="email_select">
+                    <option value="" selected>::선택하세요::</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="1">직접입력</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>연락처</th>
+              </tr>
+              <tr>
+                <td>
+                  <select id="NUMst">
+                    <option value="" selected>::선택::</option>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                  </select>
+                  -
+                  <input
+                    type="text"
+                    id="NUMnd"
+                    class="input"
+                    maxlength="4"
+                    size="4"
+                  />
+                  -
+                  <input
+                    type="text"
+                    id="NUMrd"
+                    class="input"
+                    maxlength="4"
+                    size="4"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>주소</th>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="member_postcode"
+                    id="member_postcode"
+                    class="input"
+                    readonly
+                    size="10"
+                  />
+                  <input
+                    type="button"
+                    onclick="searchPost()"
+                    style="cursor: pointer"
+                    value="우편번호 찾기"
+                  /><br /><br />
+                  <input
+                    type="text"
+                    name="member_f_addr"
+                    id="member_f_addr"
+                    class="input"
+                    size="60"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>상세주소</th>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="member_s_addr"
+                    id="member_s_addr"
+                    class="input"
+                    size="60"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    class="button_register"
+                    type="button"
+                    onclick="doSignup()"
+                    style="cursor: pointer"
+                    value="회원가입"
+                  />
+                </td>
+              </tr>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
   </body>
 </html>
