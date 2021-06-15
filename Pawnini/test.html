@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="movie_overlay"></div>
+
+    <video id="movie_injection"></video>
+
+    <script type="text/javascript" charset="utf-8">
+      function adStart() {
+        var mezzo_movie = new MezzoVideoAD();
+
+        // injection
+        var targetId = "movie_injection";
+
+        // overlay
+        //var targetId	= "movie_overlay";
+
+        // screen mode : INJECTION, OVERLAY
+        // target id : DOM element id
+        // resolution : 1024, 800, 480
+        mezzo_movie.setView("INJECTION", targetId, 1024, {
+          close_btn: {
+            show: false,
+            images: [
+              "https://advimg.ad-mapps.com/sdk/M_PLUS/Image/script/movie/close.png",
+            ],
+          },
+          auto_play: true,
+          auto_replay: false,
+          click_full_area: false,
+          muted: false,
+          viewability: true,
+          sound_btn: {
+            show: true,
+            images: [
+              "https://advimg.ad-mapps.com/sdk/M_PLUS/Image/script/movie/on.png",
+              "https://advimg.ad-mapps.com/sdk/M_PLUS/Image/script/movie/mute.png",
+            ],
+          },
+          click_btn: {
+            show: true,
+          },
+          post_click: "2",
+          skip_btn: {
+            show: true,
+          },
+        });
+
+        // injection
+        mezzo_movie.setArea(false);
+
+        // overlay
+        //mezzo_movie.setArea(true, 100);
+
+        var codes = {
+          adid: "",
+          mPublisher: "100",
+          mMedia: "200",
+          mSection: "802998",
+          uAgeLevel: "1", // 0: 만 13세 이하, 1 : 만 13세 이상
+          keyword: "", // encodeURIComponent(키워드1^키워드2^키워드3)
+        };
+
+        mezzo_movie.request(codes, {
+          success: function (type, status, data) {
+            console.log(
+              "[SUCCESS] type : " +
+                type +
+                " status : " +
+                status +
+                " data : " +
+                JSON.stringify(data)
+            );
+          },
+          fail: function (type, status, data) {
+            console.log(
+              "[FAIL] type : " +
+                type +
+                " status : " +
+                status +
+                " data : " +
+                JSON.stringify(data)
+            );
+          },
+          event: function (type, status, data) {
+            console.log(
+              "[EVENT] type : " +
+                type +
+                " status : " +
+                status +
+                " data : " +
+                JSON.stringify(data)
+            );
+          },
+        });
+      }
+
+      adStart();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://advimg.ad-mapps.com/sdk/M_PLUS/JS/common/jquery-1.11.3.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://advimg.ad-mapps.com/sdk/M_PLUS/JS/111T/ad_movie_script.js"
+    ></script>
+  </body>
+</html>
