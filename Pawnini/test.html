@@ -1,115 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      type="text/javascript"
-      src="https://advimg.ad-mapps.com/sdk/M_PLUS/JS/common/jquery-1.11.3.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://advimg.ad-mapps.com/sdk/M_PLUS/JS/111T/ad_movie_script.js"
-    ></script>
-  </head>
+<html>
   <body>
-    <div id="movie_overlay"></div>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
 
-    <video id="movie_injection"></video>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement("script");
 
-    <script type="text/javascript" charset="utf-8">
-      function adStart() {
-        var mezzo_movie = new MezzoVideoAD();
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        // injection
-        var targetId = "movie_injection";
-
-        // overlay
-        //var targetId	= "movie_overlay";
-
-        // screen mode : INJECTION, OVERLAY
-        // target id : DOM element id
-        // resolution : 1024, 800, 480
-        mezzo_movie.setView("INJECTION", targetId, 1024, {
-          close_btn: {
-            show: false,
-            images: [
-              "https://advimg.ad-mapps.com/sdk/M_PLUS/Image/script/movie/close.png",
-            ],
-          },
-          auto_play: true,
-          auto_replay: false,
-          click_full_area: false,
-          muted: false,
-          viewability: true,
-          sound_btn: {
-            show: true,
-            images: [
-              "https://advimg.ad-mapps.com/sdk/M_PLUS/Image/script/movie/on.png",
-              "https://advimg.ad-mapps.com/sdk/M_PLUS/Image/script/movie/mute.png",
-            ],
-          },
-          click_btn: {
-            show: true,
-          },
-          post_click: "2",
-          skip_btn: {
-            show: true,
-          },
-        });
-
-        // injection
-        mezzo_movie.setArea(false);
-
-        // overlay
-        //mezzo_movie.setArea(true, 100);
-
-        var codes = {
-          adid: "",
-          mPublisher: "100",
-          mMedia: "200",
-          mSection: "802998",
-          uAgeLevel: "1", // 0: 만 13세 이하, 1 : 만 13세 이상
-          keyword: "", // encodeURIComponent(키워드1^키워드2^키워드3)
-        };
-
-        mezzo_movie.request(codes, {
-          success: function (type, status, data) {
-            console.log(
-              "[SUCCESS] type : " +
-                type +
-                " status : " +
-                status +
-                " data : " +
-                JSON.stringify(data)
-            );
-          },
-          fail: function (type, status, data) {
-            console.log(
-              "[FAIL] type : " +
-                type +
-                " status : " +
-                status +
-                " data : " +
-                JSON.stringify(data)
-            );
-          },
-          event: function (type, status, data) {
-            console.log(
-              "[EVENT] type : " +
-                type +
-                " status : " +
-                status +
-                " data : " +
-                JSON.stringify(data)
-            );
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("player", {
+          height: "360",
+          width: "640",
+          videoId: "LwfU0oy2ako",
+          events: {
+            onReady: onPlayerReady,
+            onStateChange: onPlayerStateChange,
           },
         });
       }
 
-      adStart();
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
     </script>
   </body>
 </html>

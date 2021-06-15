@@ -240,3 +240,7 @@ margin-left: 150px;
     background-position: center center;
     background-size: cover;
 }
+
+#player{
+    width: 100%;
+}
