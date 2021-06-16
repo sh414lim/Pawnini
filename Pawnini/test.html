@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-
-   
-  </body>
+    <div align="center">
+       <h1>회원 리스트</h1>
+       <table border="1">
+          <tr>
+             <td>아이디      
+             <td>이름
+             <td>닉네임
+             <td>이메일
+             <td>전화번호
+             <td>가입일
+             <td>등급
+             <td>
+          <c:forEach items="${memberList}" var="member">
+          <tr>
+             <td>${member.member_id}
+             <td>${member.member_name}
+             <td>${member.member_nickname}
+             <td>${member.member_email}
+             <td>${member.member_phone}
+             <td>${member.member_regdate}
+             <td><c:if test="${member.member_grade == 1}">회원</c:if>
+             <c:if test="${member.member_grade == 2}">관리자</c:if>
+             <td><a href="deleteMember.do?member_id=${member.member_id}">회원삭제</a>
+          </c:forEach>
+       </table>
+    </div>
+    
+ </body>
 </html>
