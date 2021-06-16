@@ -42,8 +42,6 @@ list-style: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
-  width: 150px;
   clear: both;
   position: absolute;
   margin-top: 10px;
@@ -52,6 +50,9 @@ list-style: none;
   background-color: rgba(0,0,0,0.1);
   border-radius: 10px;
   opacity: 0.7;
+  width: 75px;
+  right: 1px;
+  padding-left: 5px;
 }
 .Login_ul > li > .dropmenu > span{
   width: 100%;
