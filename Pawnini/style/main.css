@@ -13,11 +13,14 @@ background-color: rgba(0,0,0,0.1);
 }
 
 .Login_ul{
+  position:sticky;
   display: flex;
   font-size: 15px;
   justify-content: flex-end;
   align-items: center;
   margin-right: 10px;
+  align-items: center;
+  list-style: none;
 top:0px;
 z-index:1;
 list-style: none;
@@ -26,6 +29,45 @@ list-style: none;
 
 .Login_ul li{
   padding: 10px;
+}
+.Login_ul > li:hover > .dropmenu{
+  visibility: visible;
+  color:black
+  
+ 
+
+}
+.Login_ul > li > .dropmenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  width: 150px;
+  clear: both;
+  position: absolute;
+  margin-top: 10px;
+  text-align: left;
+  visibility: hidden;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.Login_ul > li > .dropmenu > span{
+  width: 100%;
+  display: inline-block;
+  padding-left: 20px;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  z-index: 1;
+
+}
+.Login_ul > li > .dropmenu > span:hover{
+  font-weight: 700;
+  color:pink;
+  opacity: 0.7;
+  transition: color 0.5s ease-in-out;
 }
 
 .Title{
