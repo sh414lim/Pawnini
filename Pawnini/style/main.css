@@ -192,8 +192,7 @@ transition:color 0.5s ease-in-out;
 
 .Coment{
   display: flex;
-  position: relative;
-
+  position: absolute;
 border-top: 1px solid rgba(0,0,0,0.5);
 background-color: #F4F4F4;
 }
