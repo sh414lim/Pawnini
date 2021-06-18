@@ -1,0 +1,20 @@
+.Coment{
+    display: flex;
+    position: absolute;
+  border-top: 1px solid rgba(0,0,0,0.5);
+  background-color: #F4F4F4;
+  }
+  .Coment_Ul{
+    color:black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 200px;
+  
+  }
+  .Coment_span{
+    padding: 30px 0px 20px 0px;
+  display: flex;
+  font-size: 13px;
+  color:rgba(0,0,0,0.5);
+  }

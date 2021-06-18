@@ -73,7 +73,7 @@
               height: 100px;
               width: 95%;
               gap: 15px;
-              border: 1px solid #fdcb6e;
+              border: px solid #fdcb6e;
               font-size: 20px;
              
           }
@@ -185,4 +185,55 @@
             margin-top: 100px;
             margin-bottom: 100px;
           }
-          ​
+
+          .bener{
+            margin-top: 80px;
+          
+          }
+          
+
+          .product_bener{
+            display: flex;
+            background-image: url("../images/dog12.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 600px;
+            width: 90%;
+            margin-left: 80px;
+            margin-top: 150px;
+            margin-bottom: 150px;
+          z-index: 0;
+          box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 0.5);
+
+          }
+          .bener h1{
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 50px;
+          }
+
+          .product_image_des{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            background-image: url("../images/dog12.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 600px;
+            margin-bottom: 150px;
+          z-index: 0;
+          margin-left: 150px;
+          margin-top: 100px;
+          width: 80%;
+          }
+          .product_title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            padding: 50px;
+            text-shadow:  5px 5px 5px gray;   
+          }
