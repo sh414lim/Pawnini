@@ -73,7 +73,7 @@
               height: 100px;
               width: 95%;
               gap: 15px;
-              border: 2px solid rgba(0,0,0,0.7);
+              border: 1px solid #fdcb6e;
               font-size: 20px;
              
           }
@@ -133,7 +133,7 @@
           }
           button{
             background:#81ecec;
-            color:white;
+            color:#1e3799;
             font-weight: 600;
             border:none;
             position:relative;
@@ -146,7 +146,7 @@
           }
           button:hover{
             background:#fff;
-            color:rgba(108, 92, 231,1.0)
+            color:#fd79a8
           }
           button:before,button:after{
             content:'';
@@ -155,7 +155,7 @@
             right:0;
             height:2px;
             width:0;
-            background: #3498db;
+            background: #fdcb6e;
             transition:400ms ease all;
           }
           button:after{
