@@ -5,6 +5,8 @@
     <!-- 모바일 대응을 위한 뷰포트 기본 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/Header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
     <title>PawNiNi</title>
     <link
       rel="stylesheet"
@@ -34,11 +36,12 @@
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1>
-          <a href="./main.html"><img src="./images/Rogo.jpg" /></a>
-        </h1>
-      </div>
+          <a class="title_a" href="./main.html">
+            <img class="title_image" src="./images/Rogo.jpg" />
+          </a>
       <input class="Header_input" type="text" placeholder="Search..." />
+
+      </div>
     <h3 class="basket"><a href="basket.html">장바구니</a></h1>
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
@@ -73,12 +76,9 @@
     <!-- stlye 은 slick 영역 확인용 -->
     <div class="slider">
       <div id="slider-div">
-        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/dog10.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/pet2.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/pet3.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/pet4.jpg" /></div>
       </div>
     </div>
 
@@ -213,14 +213,14 @@
           responsive: [
             // 반응형 웹 구현 옵션
             {
-              breakpoint: 960, //화면 사이즈 960px
+              breakpoint: 1060, //화면 사이즈 960px
               settings: {
                 //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
                 slidesToShow: 3,
               },
             },
             {
-              breakpoint: 768, //화면 사이즈 768px
+              breakpoint: 1060, //화면 사이즈 768px
               settings: {
                 //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
                 slidesToShow: 2,

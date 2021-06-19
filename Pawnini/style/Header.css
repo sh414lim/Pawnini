@@ -73,44 +73,41 @@ list-style: none;
 }
 
 .Title{
-  display: flex;
-justify-content: center;
-font-size: 40px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-margin-top: 60px;
-margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+
 }
+
 .basket{
 display: flex;
 justify-content: flex-end;
 align-items: center;
 margin-right: 130px;
 }
+
 .Header_input{
   display: flex;
   border-style: none;
+  justify-content: center;
+  align-items: center;
 font-size: 25px;
 margin-bottom: 10px;
 outline :none;
-margin-left: 1000px;
-border-bottom: 1px solid rgba(0,0,0,0.1);
 padding: 0px 0px 10px 0px;
-width: 20%;
 }
 .Header_menu{
 z-index:1;
-
 }
 .Header_ul{
   display: flex;
-position:sticky;
 height: 60px;
   justify-content:space-around;
   align-items: center;
   list-style: none;
   font-weight: 500;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding-bottom: 50px;
+  width: 80%;
+  margin-left: 150px;
 }
 
 .Header_ul li{
@@ -119,7 +116,6 @@ height: 60px;
 font-size: 20px;
 font-weight:600;
   color:black;
-  opacity: 0.8;
   z-index: 1;
 }
 
@@ -148,7 +144,6 @@ transition:color 0.5s ease-in-out;
   visibility: hidden;
   background-color: rgba(0,0,0,0.1);
   border-radius: 10px;
-  opacity: 0.7;
 }
 .Header_ul > li > .dropmenu > span{
   width: 100%;
