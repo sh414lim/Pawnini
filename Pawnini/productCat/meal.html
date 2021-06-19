@@ -1,34 +1,54 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/main.css" />
     <link rel="stylesheet" href="../style/snack.css" />
+    <link rel="stylesheet" href="../style/Header.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+
     <title>meal</title>
   </head>
   <!-- <%@ include file="../include/Header.jsp" %> -->
   <body>
-    <!-- <div class="Login">
+    <div class="Login">
       <ul class="Login_ul">
         <li><a href="../Login.html">LOGIN</a></li>
         <li><a href="../signUp.html">SignUp</a></li>
-        <li><a>My Pages</a></li>
+        <li><a href="../Mypage.html">My Pages</a></li>
+        <li class="Manager">
+          관리자
+          <span class="dropmenu">
+            <!-- 관리자 카테고리 메뉴 연동 -->
+            <span><a href="../Mypage.html">분양관리</a></span>
+            <span><a href="../Mypage.html">회원관리</a></span>
+            <span><a href="../Mypage.html">상품관리</a></span>
+          </span>
+        </li>
       </ul>
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1><a href="../main.html"><img src=../images/Rogo.jpg></a></h1>
+        <a href="../main.html">
+          <h1>PaAWnini</h1>
+        </a>
+        <input class="Header_input" type="text" placeholder="Search..." />
       </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
+
+      <a class="basket" href="basket.html">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
           Dog
           <span class="dropmenu">
-            <span><a href="./Snack.html">Snack</a></span>
-            <span><a href="./Supplies.html">Supplies</a></span>
-            <span><a href="./meal.html">meal</a></span>
+            <span><a href="../product/">Snack</a></span>
+            <span><a href="../product/Supplies.html">Supplies</a></span>
+            <span><a href="../product/meal.html">meal</a></span>
           </span>
         </li>
         <li class="Cat_dropmenu">
@@ -41,15 +61,16 @@
         </li>
         <li><a href="../EVENT/event.html">Event</a></li>
         <li><a href="../Service/Service.html">Service</a></li>
+
         <li class="Dog_dropmenu">
           <a href="../Adopotion/Adoption.html"> Adoption</a>
           <span class="dropmenu">
-            <span><a href="../Adopotion/dog.html">Cat</a></span>
-            <span><a href="../Adopotion/Cat.html">Dog</a></span>
+            <span><a href="../Adopotion/dog.html">Dog</a></span>
+            <span><a href="../Adopotion/Cat.html">Cat</a></span>
           </span>
         </li>
         <li><a href="../NOTIC/Notice.html">Notice</a></li>
-      </ul> -->
+      </ul>
     </header>
     <h1>Meal Dog</h1>
     <div class="Table">
@@ -222,7 +243,7 @@
 
     <!-- <%@ include file="../include/Footer.jsp" %> -->
 
-    <!-- <footer>
+    <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
           <li class="Coment_li">
@@ -260,6 +281,6 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
