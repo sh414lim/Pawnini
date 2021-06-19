@@ -1,4 +1,6 @@
-
+body{
+  width: 100%;
+}
 .slider{
   width: 100vw;
 }
@@ -76,13 +78,28 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-.Adoption{
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 200px;
+
+
+
+
+
+.Bouns_ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  background-color: #ffeaa7;
+  padding: 20px;
+  margin-top: 200px;
+  list-style: none;
+  margin-left: 50px;
+  border-radius: 15px;
 }
-
-
+.Bouns_ul h4{
+  display: flex;
+  justify-content: center;
+color: black;
+font-size: 30px;
+font-weight: 600;
+}
 
 
 

@@ -1,8 +1,10 @@
 .Coment{
     display: flex;
-    position: absolute;
   border-top: 1px solid rgba(0,0,0,0.5);
   background-color: #F4F4F4;
+  margin-top: 200px;
+  width: 100%;
+  margin-left: 15px;
   }
   .Coment_Ul{
     color:black;
