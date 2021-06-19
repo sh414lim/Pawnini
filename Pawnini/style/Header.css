@@ -1,16 +1,16 @@
 
-*{
+@media (min-height: 1000px), (min-width: 1000px){
+  *{
   text-decoration: none;
       color:inherit;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
 
-
 }
 .Login{
   font-size: 20px;
-background-color: rgba(0,0,0,0.1);
+  width: 80%;
 }
 
 .Login_ul{
@@ -30,6 +30,9 @@ list-style: none;
 
 .Login_ul li{
   padding: 10px;
+  color:#fdcb6e;
+  font-weight: 900;
+  
 }
 .Login_ul > li:hover > .dropmenu{
   visibility: visible;
@@ -48,7 +51,7 @@ list-style: none;
   margin-top: 10px;
   text-align: left;
   visibility: hidden;
-  background-color: rgba(0,0,0,0.1);
+  background-color: #fab1a0;
   border-radius: 10px;
   opacity: 0.7;
   width: 75px;
@@ -67,27 +70,37 @@ list-style: none;
 }
 .Login_ul > li > .dropmenu > span:hover{
   font-weight: 700;
-  color:pink;
   opacity: 0.7;
   transition: color 0.5s ease-in-out;
 }
 
 .Title{
-display: flex;
+  display:flex;
+  justify-content:flex-start;
 font-size: 20px;
 margin-left: 80px;
+
 }
+
+
 
 .basket{
 display: flex;
-justify-content: flex-end;
 align-items: center;
-margin-right: 130px;
+justify-content: flex-end;
+color:black;
+margin-right: 150px;
+font-size: 25px;
+}
+
+.basket:hover{
+  color:#fdcb6e;
+  transition: 0.3s color ease-in-out;
 }
 
 .Header_input{
   display: flex;
-  border:2px solid #fd79a8 ;
+  border:2px solid #fdcb6e ;
   outline: #fd79a8;
   justify-content: center;
   align-items: center;
@@ -95,22 +108,26 @@ margin-right: 130px;
   margin-bottom: 10px;
   width:20%;
   margin-top: 30px;
-  border-radius: 30px;
-  margin-left: 80px;
+  border-radius: 20px;
+  margin-left: 20px;
 }
 .Header_menu{
 z-index:1;
+width: 80%;
+display: flex;
+flex-direction: column;
+margin-left: 190px;
 }
 
 .Header_ul{
   display: flex;
-height: 60px;
-  justify-content:space-around;
+  justify-content:flex-start;
   align-items: center;
   list-style: none;
   font-weight: 500;
-  width: 80%;
-  margin-left: 150px;
+  border-radius: 30px;
+  background-color: #ffeaa7;
+
 }
 
 .Header_ul li{
@@ -145,7 +162,7 @@ transition:color 0.5s ease-in-out;
   margin-top: 50px;
   text-align: left;
   visibility: hidden;
-  background-color: #ffeaa7;
+  background-color: #fdcb6e;
   border-radius: 10px;
 }
 .Header_ul > li > .dropmenu > span{
@@ -158,11 +175,10 @@ transition:color 0.5s ease-in-out;
   z-index: 1;
 
 }
-.Header_ul > li > .dropmenu > span:hover{
-  font-weight: 700;
-  color:black;
-  transition: color 0.5s ease-in-out;
-}
+
+
+
+
 .Dog_dropmenu{
   height: 60px;
   margin-top: 50px;
@@ -170,5 +186,11 @@ transition:color 0.5s ease-in-out;
 .Cat_dropmenu{
   height: 60px;
   margin-top: 50px;
+
+}
+}
+
+@media (min-height: 1000px), (min-width: 1000px){
+
 
 }
