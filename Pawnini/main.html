@@ -34,7 +34,6 @@
         </li>
       </ul>
     </div>
-    <ul class="login_ul_drop"></ul>
     <header class="Header_menu">
       <div class="Title">
         <a href="./main.html">
@@ -80,9 +79,10 @@
     <!-- stlye 은 slick 영역 확인용 -->
     <div class="slider">
       <div id="slider-div">
-        <div><img class="slider-div-image" src="./images/pet2.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/pet3.jpg" /></div>
-        <div><img class="slider-div-image" src="./images/pet4.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/slider.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/slider2.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/slider3.jpg" /></div>
+        <div><img class="slider-div-image" src="./images/slider4.jpg" /></div>
       </div>
     </div>
 
@@ -93,7 +93,8 @@
       <div class="Store_Save">
         <h1 class="Store_h1">추천상품!!!</h1>
       </div>
-      <section class="product">
+      <section>
+        <div class="sa sa-down"></div>
         <div class="sa sa-down"></div>
         <div class="sa sa-down"></div>
         <div class="sa sa-down"></div>
@@ -103,30 +104,36 @@
         <div class="sa sa-left">디비전 8</div> -->
       </section>
 
-      <h1 class="Brand_text">Brand</h1>
+      <h1 class="Store_two_text">오늘의 할인</h1>
+      <section>
+        <div class="sa sa-_brand"></div>
+        <div class="sa sa-_brand"></div>
+        <div class="sa sa-_brand"></div>
+        <div class="sa sa-_brand"></div>
+        <div class="sa sa-_brand"></div>
+      </section>
 
-      <section>
-        <div class="sa sa-_brand"></div>
-        <div class="sa sa-_brand"></div>
-        <div class="sa sa-_brand"></div>
-        <div class="sa sa-_brand"></div>
-      </section>
-
-      <section class="bener_last">
-        <div class="sa sa-up"></div>
-        <h1 class="sa Text_one">Bless your dog.</h1>
-      </section>
-      <section>
-        <h1 class="sa Text_two">Please be a butler for cats.</h1>
-        <div class="sa sa-up_two"></div>
-      </section>
-      <section>
-        <div class="sa sa-up_two_last"></div>
-      </section>
-      <section>
-        <h1 class="sa Text_two_last">WelCome To PawNINI</h1>
-      </section>
+      <div>
+        <h1 class="Brand_text">인기 브랜드</h1>
+        <div class="brand">
+          <ul class="brand_grid">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+          </ul>
+        </div>
+      </div>
     </main>
+
+    <div class="Adoption">
+      <h1>당신을 기다립니다</h1>
+    </div>
+
     <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
@@ -213,17 +220,17 @@
           responsive: [
             // 반응형 웹 구현 옵션
             {
-              breakpoint: 1060, //화면 사이즈 960px
+              breakpoint: 960, //화면 사이즈 960px
               settings: {
                 //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                slidesToShow: 3,
+                slidesToShow: 1,
               },
             },
             {
-              breakpoint: 1060, //화면 사이즈 768px
+              breakpoint: 960, //화면 사이즈 768px
               settings: {
                 //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                slidesToShow: 2,
+                slidesToShow: 1,
               },
             },
           ],
