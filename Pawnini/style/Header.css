@@ -5,7 +5,7 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
-min-width: 1500px;
+
 
 }
 .Login{
@@ -73,10 +73,9 @@ list-style: none;
 }
 
 .Title{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  
-
+display: flex;
+font-size: 20px;
+margin-left: 80px;
 }
 
 .basket{
@@ -88,17 +87,21 @@ margin-right: 130px;
 
 .Header_input{
   display: flex;
-  border-style: none;
+  border:2px solid #fd79a8 ;
+  outline: #fd79a8;
   justify-content: center;
   align-items: center;
-font-size: 25px;
-margin-bottom: 10px;
-outline :none;
-padding: 0px 0px 10px 0px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width:20%;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-left: 80px;
 }
 .Header_menu{
 z-index:1;
 }
+
 .Header_ul{
   display: flex;
 height: 60px;
@@ -120,7 +123,7 @@ font-weight:600;
 }
 
 .Header_ul li :hover{
-color:pink;
+color:red;
 transition:color 0.5s ease-in-out;
 
 }
@@ -142,7 +145,7 @@ transition:color 0.5s ease-in-out;
   margin-top: 50px;
   text-align: left;
   visibility: hidden;
-  background-color: rgba(0,0,0,0.1);
+  background-color: #ffeaa7;
   border-radius: 10px;
 }
 .Header_ul > li > .dropmenu > span{
