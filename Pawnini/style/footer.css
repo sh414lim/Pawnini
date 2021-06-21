@@ -23,7 +23,7 @@
   .Bouns_ul{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    background-color: #FF5152;
+    background-color: #fdcb6e ;
     padding: 20px;
     margin-top: 200px;
     list-style: none;
@@ -33,7 +33,7 @@
   .Bouns_ul h3{
     display: flex;
     justify-content: center;
-    color: white;
+    color: #ecf0f1;
   font-size: 25px;
   font-weight: 600;
   }
