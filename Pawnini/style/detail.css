@@ -10,11 +10,12 @@
    
 }
 .product_image{
-    background-image: url("../images/dog12.jpg");
+    background-image: url("../images/test.PNG");
     background-position: center center;
     background-size: cover;
-    width: 80%;
-    margin-left: 15px;
+    width: 60%;
+    height: 70%;
+    margin-left: 320px;
     border-radius: 5px;
     border-right: 3px solid rgba(0,0,0,0.1);
 }
