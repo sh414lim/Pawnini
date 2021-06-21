@@ -83,23 +83,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 
 
-.Bouns_ul{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  background-color: #FF5152;
-  padding: 20px;
-  margin-top: 200px;
-  list-style: none;
-  margin-left: 50px;
-  border-radius: 15px;
-}
-.Bouns_ul h3{
-  display: flex;
-  justify-content: center;
-  color: white;
-font-size: 25px;
-font-weight: 600;
-}
+
 
 
 
