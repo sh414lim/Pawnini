@@ -100,6 +100,7 @@ margin-left: 980px;
   transition: 0.3s color ease-in-out;
 }
 
+
 .Header_input{
   display: flex;
   border:2px solid #fdcb6e ;
@@ -108,7 +109,6 @@ margin-left: 980px;
   align-items: center;
   font-size: 20px;
   margin-bottom: 10px;
-  width:25%;
   margin-top: 30px;
   border-radius: 20px;
   margin-left: 20px;

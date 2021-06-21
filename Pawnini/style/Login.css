@@ -10,7 +10,7 @@
     opacity: 0.7;
 }
 
-.form{
+.Form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@
     height: 300px;
     margin-bottom: 60px;
 }
-.form input{
+.Form input{
     display: flex;
     border:2px solid #fdcb6e ;
     outline: #fd79a8;
@@ -34,7 +34,7 @@
 
 }
 
-.form h1{
+.Form h1{
     padding: 30px;
 }
 button{

@@ -1,6 +1,11 @@
 body{
   width: 100%;
 }
+
+
+.Header_input{
+  height: 50px;
+}
 .slider{
   width: 100vw;
 }
