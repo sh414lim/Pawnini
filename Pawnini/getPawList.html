@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="style/getPawList.css" />
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+	<div class="Login">
+		<ul class="Login_ul">
+		  <li><a href="./Login.html">LOGIN</a></li>
+		  <li><a href="./signUp.html">SignUp</a></li>
+		  <li><a href="./Mypage.html">My Pages</a></li>
+		</ul>
+	  </div>
+	  <header class="Header_menu">
+		<div class="Title">
+		  <h1>
+			<a href="./main.html"><img src="./images/Rogo.jpg" /></a>
+		  </h1>
+		</div>
+		<input class="Header_input" type="text" placeholder="Search..." />
+	  <h3 class="basket"><a href="basket.html">장바구니</a></h1>
+		<ul class="Header_ul">
+		  <li class="Dog_dropmenu">
+			Dog
+			<span class="dropmenu">
+			  <span><a href="./product/Snack.html">Snack</a></span>
+			  <span><a href="./product/Supplies.html">Supplies</a></span>
+			  <span><a href="./product/meal.html">meal</a></span>
+			</span>
+		  </li>
+		  <li class="Cat_dropmenu">
+			Cat
+			<span class="dropmenu">
+			  <span><a href="./productCat/Snack.html">Snack</a></span>
+			  <span><a href="./productCat/Supplies.html">Supplies</a></span>
+			  <span><a href="./productCat/meal.html">meal</a></span>
+			</span>
+		  </li>
+		  <li><a href="./EVENT/event.html">Event</a></li>
+		  <li><a href="./Service/Service.html">Service</a></li>
+  
+		  <li class="Dog_dropmenu">
+			<a href="./Adopotion/Adoption.html"> Adoption</a>
+			<span class="dropmenu">
+			  <span><a href="./Adopotion/dog.html">Dog</a></span>
+			  <span><a href="./Adopotion/Cat.html">Cat</a></span>
+			</span>
+		  </li>
+		  <li><a href="./NOTIC/Notice.html">Notice</a></li>
+		</ul>
+	  </header>
+    <div align="center">
+		
+		<h1> 등록 동물 관리 </h1>
+		<table border="1" width="1000">
+			<tr class="Head">
+				<td>등록번호
+				<td>사진
+				<td>1차분류
+				<td>2차분류
+				<td>이름
+				<td>나이
+				<td>성별
+				<td>중성화여부
+				<td>건강
+				<td>등록일시
+				<td colspan="2">
+				
+			<c:forEach items="${pawsList}" var="paws">
+			<tr class="">
+				<td class="first">${paws.paws_id}
+				<td><img src="${paws.paws_thumb_img}" class="thu_img">	
+				<td>${paws.paws_f_code}	
+				<td>${paws.paws_s_code}
+				<td>${paws.paws_name}
+				<td>${paws.paws_age}
+				<td>${paws.paws_sex}
+				<td>${paws.paws_is_neutered}
+				<td>${paws.paws_health}
+				<td>${paws.paws_regdate}
+				<td><a href="getPaws.do?paws_id=${paws.paws_id}">수정</a>
+				<td><a href="deletePaws.do?paws_id=${paws.paws_id}">삭제</a>
+			</c:forEach>
+			<c:forEach items="${pawsList}" var="paws">
+				<tr class="">
+					<td>${paws.paws_id}
+					<td><img src="${paws.paws_thumb_img}" class="thu_img">	
+					<td>${paws.paws_f_code}	
+					<td>${paws.paws_s_code}
+					<td>${paws.paws_name}
+					<td>${paws.paws_age}
+					<td>${paws.paws_sex}
+					<td>${paws.paws_is_neutered}
+					<td>${paws.paws_health}
+					<td>${paws.paws_regdate}
+					<td><a href="getPaws.do?paws_id=${paws.paws_id}">수정</a>
+					<td><a href="deletePaws.do?paws_id=${paws.paws_id}">삭제</a>
+				</c:forEach>
+				<c:forEach items="${pawsList}" var="paws">
+					<tr class="">
+						<td>${paws.paws_id}
+						<td><img src="${paws.paws_thumb_img}" class="thu_img">	
+						<td>${paws.paws_f_code}	
+						<td>${paws.paws_s_code}
+						<td>${paws.paws_name}
+						<td>${paws.paws_age}
+						<td>${paws.paws_sex}
+						<td>${paws.paws_is_neutered}
+						<td>${paws.paws_health}
+						<td>${paws.paws_regdate}
+						<td><a href="getPaws.do?paws_id=${paws.paws_id}">수정</a>
+						<td><a href="deletePaws.do?paws_id=${paws.paws_id}">삭제</a>
+					</c:forEach>
+					<c:forEach items="${pawsList}" var="paws">
+						<tr class="">
+							<td>${paws.paws_id}
+							<td><img src="${paws.paws_thumb_img}" class="thu_img">	
+							<td>${paws.paws_f_code}	
+							<td>${paws.paws_s_code}
+							<td>${paws.paws_name}
+							<td>${paws.paws_age}
+							<td>${paws.paws_sex}
+							<td>${paws.paws_is_neutered}
+							<td>${paws.paws_health}
+							<td>${paws.paws_regdate}
+							<td><a href="getPaws.do?paws_id=${paws.paws_id}">수정</a>
+							<td><a href="deletePaws.do?paws_id=${paws.paws_id}">삭제</a>
+						</c:forEach>
+						<c:forEach items="${pawsList}" var="paws">
+							<tr class="">
+								<td>${paws.paws_id}
+								<td><img src="${paws.paws_thumb_img}" class="thu_img">	
+								<td>${paws.paws_f_code}	
+								<td>${paws.paws_s_code}
+								<td>${paws.paws_name}
+								<td>${paws.paws_age}
+								<td>${paws.paws_sex}
+								<td>${paws.paws_is_neutered}
+								<td>${paws.paws_health}
+								<td>${paws.paws_regdate}
+								<td><a href="getPaws.do?paws_id=${paws.paws_id}">수정</a>
+								<td><a href="deletePaws.do?paws_id=${paws.paws_id}">삭제</a>
+							</c:forEach>
+							
+		</table>
+		<a href="goInsertPaws.do">신규 등록</a><br>
+		<a href="getPawsList.do">분양페이지</a>
+	</div>
+
+	<footer>
+		<div class="Coment">
+		  <ul class="Coment_Ul">
+			<li class="Coment_li">
+			  <span class="Coment_span">REVERSIBLE HARNESSES</span>
+			  <span class="Coment_span">COLLARS</span>
+			  <span class="Coment_span">BANDANAS</span>
+			  <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+			</li>
+		  </ul>
+  
+		  <ul class="Coment_Ul">
+			<li class="Coment_li">
+			  <span class="Coment_span">REVERSIBLE HARNESSES</span>
+			  <span class="Coment_span">COLLARS</span>
+			  <span class="Coment_span">BANDANAS</span>
+			  <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+			</li>
+		  </ul>
+  
+		  <ul class="Coment_Ul">
+			<li class="Coment_li">
+			  <span class="Coment_span">REVERSIBLE HARNESSES</span>
+			  <span class="Coment_span">COLLARS</span>
+			  <span class="Coment_span">BANDANAS</span>
+			  <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+			</li>
+		  </ul>
+  
+		  <ul class="Coment_Ul">
+			<li class="Coment_li">
+			  <span class="Coment_span">REVERSIBLE HARNESSES</span>
+			  <span class="Coment_span">COLLARS</span>
+			  <span class="Coment_span">BANDANAS</span>
+			  <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+			</li>
+		  </ul>
+		</div>
+	  </footer>
+	  <script
+      src="https://kit.fontawesome.com/583cb96774.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -6,25 +6,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/Mypages.css" />
+    <link rel="stylesheet" href="style/Header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
     <title>Pawnini</title>
   </head>
-
-  <!-- <%@ include file="../include/Header.jsp" %> -->
-
   <body>
-    <!-- <div class="Login">
+    <div class="Login">
       <ul class="Login_ul">
         <li><a href="./Login.html">LOGIN</a></li>
         <li><a href="./signUp.html">SignUp</a></li>
         <li><a href="./Mypage.html">My Pages</a></li>
+        <li class="Manager">
+          관리자
+          <span class="dropmenu">
+            <!-- 관리자 카테고리 메뉴 연동 -->
+            <span><a href="./Mypage.html">분양관리</a></span>
+            <span><a href="./Mypage.html">회원관리</a></span>
+            <span><a href="./Mypage.html">상품관리</a></span>
+          </span>
+        </li>
       </ul>
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1><a href="./main.html"><img src=./images/Rogo.jpg></a></h1>
+        <a href="./main.html">
+          <h1>PaAWnini</h1>
+        </a>
+        <input class="Header_input" type="text" placeholder="Search..." />
       </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
+
+      <a class="basket" href="basket.html">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
           Dog
@@ -44,19 +59,197 @@
         </li>
         <li><a href="./EVENT/event.html">Event</a></li>
         <li><a href="./Service/Service.html">Service</a></li>
+
         <li class="Dog_dropmenu">
           <a href="./Adopotion/Adoption.html"> Adoption</a>
           <span class="dropmenu">
-            <span><a href="./Adopotion/dog.html">Cat</a></span>
-            <span><a href="./Adopotion/Cat.html">Dog</a></span>
+            <span><a href="./Adopotion/dog.html">Dog</a></span>
+            <span><a href="./Adopotion/Cat.html">Cat</a></span>
           </span>
         </li>
         <li><a href="./NOTIC/Notice.html">Notice</a></li>
       </ul>
-    </header> -->
+    </header>
+    <div class="Guide">
+      <span>MY PAGE</span>
+    </div>
+    <div class="wrap">
+      <div class="greenContainer">
+        <div>
+          <div class="grade">GOLD</div>
+          <div class="name">Jaden</div>
+        </div>
+        <div class="modify">i</div>
+      </div>
+      <div class="summaryContainer">
+        <div class="item">
+          <div class="number">354</div>
+          <div>단골상점</div>
+        </div>
+        <div class="item">
+          <div class="number">354</div>
+          <div>상품후기</div>
+        </div>
+        <div class="item">
+          <div class="number">354</div>
+          <div>적립금(BLCT)</div>
+        </div>
+      </div>
+      <div class="shippingStatusContainer">
+        <div class="title">주문/배송조회</div>
+        <div class="status">
+          <div class="item">
+            <div>
+              <div class="green number">6</div>
+              <a href="./basket.html"> <div class="text">장바구니</div></a>
+            </div>
+            <div class="icon">></div>
+          </div>
+          <div class="item">
+            <div>
+              <div class="number">0</div>
+              <div class="text">결제완료</div>
+            </div>
+            <div class="icon">></div>
+          </div>
+          <div class="item">
+            <div>
+              <div class="green number">1</div>
+              <div class="text">배송중</div>
+            </div>
+            <div class="icon">></div>
+          </div>
+          <div class="item">
+            <div>
+              <div class="green number">3</div>
+              <div class="text">구매확정</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="listContainer">
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">주문목록<span class="circle"></span></div>
+          <div class="right">></div>
+        </a>
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">상품후기</div>
+          <div class="right">></div>
+        </a>
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">상품문의</div>
+          <div class="right">></div>
+        </a>
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">단골상점</div>
+          <div class="right">></div>
+        </a>
+      </div>
+      <div class="listContainer">
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">
+            <span>내지갑</span>
+            <span class="smallLight">
+              <span>|</span>
+              <span>보유 적립금</span>
+            </span>
+          </div>
+          <div class="right">
+            <span class="blct">175 BLCT</span>
+            >
+          </div>
+        </a>
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">알림</div>
+          <div class="right">></div>
+        </a>
+        <a href="#" class="item">
+          <div class="icon">ii</div>
+          <div class="text">설정</div>
+          <div class="right">></div>
+        </a>
+      </div>
+      <div class="infoContainer">
+        <a href="#" class="item">
+          <div>icon</div>
+          <div>공지사항</div>
+        </a>
+        <a href="#" class="item">
+          <div>icos</div>
+          <div>이용안내</div>
+        </a>
+        <a href="#" class="item">
+          <div>icon</div>
+          <div>고객센터</div>
+        </a>
+      </div>
+    </div>
+    <div class="Bouns">
+      <ul class="Bouns_ul">
+        <li>
+          <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
+        </li>
+        <li>
+          <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
+       
+        </li>
+        <li>
+          <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
+        </li>
+        <li>
+          <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
+        </li>
+     
+    </div>
 
-    <h1>공사중</h1>
+    <footer>
+      <div class="Coment">
+        <ul class="Coment_Ul">
+          <li class="Coment_li">
+            <span class="Coment_span">REVERSIBLE HARNESSES</span>
+            <span class="Coment_span">COLLARS</span>
+            <span class="Coment_span">BANDANAS</span>
+            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+          </li>
+        </ul>
 
-    <!-- <%@ include file="../include/Footer.jsp" %> -->
+        <ul class="Coment_Ul">
+          <li class="Coment_li">
+            <span class="Coment_span">REVERSIBLE HARNESSES</span>
+            <span class="Coment_span">COLLARS</span>
+            <span class="Coment_span">BANDANAS</span>
+            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+          </li>
+        </ul>
+
+        <ul class="Coment_Ul">
+          <li class="Coment_li">
+            <span class="Coment_span">REVERSIBLE HARNESSES</span>
+            <span class="Coment_span">COLLARS</span>
+            <span class="Coment_span">BANDANAS</span>
+            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+          </li>
+        </ul>
+
+        <ul class="Coment_Ul">
+          <li class="Coment_li">
+            <span class="Coment_span">REVERSIBLE HARNESSES</span>
+            <span class="Coment_span">COLLARS</span>
+            <span class="Coment_span">BANDANAS</span>
+            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/583cb96774.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
