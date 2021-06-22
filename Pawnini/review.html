@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>getReviewList</title>
+    <link  rel="stylesheet" href="./style/Header.css"/>
+    <link rel="stylesheet" href="./style/footer.css"/>
+    <link rel="stylesheet" href="./style/review.css"/>
+<style type="text/css">
+   li {
+      list-style: none;
+      float: left;
+      padding: 6px;
+   }
+   a, a:hover, a:focus, a:active {
+      color: black;
+      text-decoration: none;
+   }
+</style>
+</head>
+
+<body>
+    <div class="Login">
+        <ul class="Login_ul">
+          <li><a href="./Login.html">LOGIN</a></li>
+          <li><a href="./signUp.html">SignUp</a></li>
+          <li><a href="./Mypage.html">My Pages</a></li>
+          <li class="Manager">
+            관리자
+            <span class="dropmenu">
+              <!-- 관리자 카테고리 메뉴 연동 -->
+              <span><a href="./Mypage.html">분양관리</a></span>
+              <span><a href="./Mypage.html">회원관리</a></span>
+              <span><a href="./Mypage.html">상품관리</a></span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <header class="Header_menu">
+        <div class="Title">
+          <a href="./main.html">
+            <h1>PaAWnini</h1>
+          </a>
+          <input class="Header_input" type="text" placeholder="Search..." />
+        </div>
+  
+        <a class="basket" href="basket.html">
+          <i class="fas fa-shopping-cart fa-lg"></i>
+        </a>
+  
+        <ul class="Header_ul">
+          <li class="Dog_dropmenu">
+            Dog
+            <span class="dropmenu">
+              <span><a href="./product/Snack.html">Snack</a></span>
+              <span><a href="./product/Supplies.html">Supplies</a></span>
+              <span><a href="./product/meal.html">meal</a></span>
+            </span>
+          </li>
+          <li class="Cat_dropmenu">
+            Cat
+            <span class="dropmenu">
+              <span><a href="./productCat/Snack.html">Snack</a></span>
+              <span><a href="./productCat/Supplies.html">Supplies</a></span>
+              <span><a href="./productCat/meal.html">meal</a></span>
+            </span>
+          </li>
+          <li><a href="./EVENT/event.html">Event</a></li>
+          <li><a href="./Service/Service.html">Service</a></li>
+  
+          <li class="Dog_dropmenu">
+            <a href="./Adopotion/Adoption.html"> Adoption</a>
+            <span class="dropmenu">
+              <span><a href="./Adopotion/dog.html">Dog</a></span>
+              <span><a href="./Adopotion/Cat.html">Cat</a></span>
+            </span>
+          </li>
+          <li><a href="./NOTIC/Notice.html">Notice</a></li>
+        </ul>
+      </header>
+
+
+
+   <div class="Guide">
+      <span>REVIEW</span>
+    </div>
+
+    
+
+    <!-- <div class="benner">
+        <h1>여러분의 후기를 남겨주세요❤</h1>
+    </div> -->
+
+
+    <div class="container">
+      
+        <form role="searchForm" method="get">
+        <div class="search_row">
+           <div class="col-xs-2 col-sm-2">
+              <select name="searchType" class="form-control">
+                 <option value="n"<c:out value="${scri.searchType == null ? 'selected' : '' }"/>>-----</option>
+                 <option value="t"<c:out value="${scri.searchType eq 't' ? 'selected' : '' }"/>>제목</option>
+                 <option value="c"<c:out value="${scri.searchType eq 'c' ? 'selected' : '' }"/>>내용</option>
+                 <option value="tc"<c:out value="${scri.searchType eq 'tc' ? 'selected' : '' }"/>>제목+내용</option>
+              </select>
+           </div>
+           
+           <div class="input_container">
+              <div class="input-group">
+                 <input type="text" name="keyword" id="keywordInput" value="${scri.keyword}" class="form-control"/>  
+                 <button id="searchBtn" type="button" class="btn btn-default">검색</button>
+              </div>
+           </div>
+
+
+ 
+           pagination
+
+
+
+   <section id="container">
+      
+      <table class="table table-hover">
+         <tr class="product">
+            <td>번호
+            <td>상품번호
+            <td>글쓴이
+            <td>제목
+            <td>크기
+            <td>평점
+            <td>등록일
+            <td colspan="2">
+            
+         <c:forEach items="${reviewList}" var="review">
+         <tr>
+            <td>${review.rev_id}   
+            <td>${review.product_id}   
+            <td>${review.rev_writer}
+            <td><a href="/getReview.do?rev_id=${review.rev_id}&
+                                          page=${scri.page}&
+                                          perPageNum=${scri.perPageNum}&
+                                          searchType=${scri.searchType}&
+                                          keyword=${scri.keyword}">${review.rev_title}
+               <c:if test="${review.rev_com_cnt ne 0}">
+                  <small><b>[&nbsp;<c:out value="${review.rev_com_cnt}"/>&nbsp;]</b></small>
+               </c:if></a>
+            <td>${review.rev_f_category}
+            <td>${review.rev_stars}
+            <td><fmt:formatDate value="${review.rev_date}" pattern="yyyy-MM-dd" />
+            <%-- <td><a class="formal" href="getReview.do?rev_id=${review.rev_id}">수정</a>
+            <td><a class="delete" href="deleteReview.do?rev_id=${review.rev_id}">삭제</a> --%>
+         </c:forEach>
+      </table>
+      </section>
+      <div class="col-md-offset-3">
+         <ul class="pagination">
+            <c:if test="${pageMaker.prev}">
+               <li><a href="getReviewList${pageMaker.makeSearch(pageMaker.startPage -1)}">이전</a></li>
+            </c:if>
+            
+            <c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="idx">
+               <li <c:out value="${pageMaker.cri.page == idx ? 'class=info ' : '' }"/>>
+               <a href="getReviewList.do${pageMaker.makeSearch(idx)}">${idx}</a></li>
+            </c:forEach>
+            
+            <c:if test="${pageMaker.next && pageMaker.endPage > 0}">
+               <li><a href="getReviewList${pageMaker.makeSearch(pageMaker.endPage +1)}">다음</a></li>
+            </c:if>
+         </ul>
+      </div>
+      <a class="review_create_button" href="/insertReviewView.do">후기 작성</a>
+   </div>
+   
+   </form>
+
+
+
+
+   </div>
+   <div class="Bouns">
+    <ul class="Bouns_ul">
+      <li>
+        <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
+      </li>
+      <li>
+        <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
+     
+      </li>
+      <li>
+        <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
+      </li>
+      <li>
+        <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
+      </li>
+   
+  </div>
+
+  <footer>
+    <div class="Coment">
+      <ul class="Coment_Ul">
+        <li class="Coment_li">
+          <span class="Coment_span">REVERSIBLE HARNESSES</span>
+          <span class="Coment_span">COLLARS</span>
+          <span class="Coment_span">BANDANAS</span>
+          <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+        </li>
+      </ul>
+
+      <ul class="Coment_Ul">
+        <li class="Coment_li">
+          <span class="Coment_span">REVERSIBLE HARNESSES</span>
+          <span class="Coment_span">COLLARS</span>
+          <span class="Coment_span">BANDANAS</span>
+          <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+        </li>
+      </ul>
+
+      <ul class="Coment_Ul">
+        <li class="Coment_li">
+          <span class="Coment_span">REVERSIBLE HARNESSES</span>
+          <span class="Coment_span">COLLARS</span>
+          <span class="Coment_span">BANDANAS</span>
+          <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+        </li>
+      </ul>
+
+      <ul class="Coment_Ul">
+        <li class="Coment_li">
+          <span class="Coment_span">REVERSIBLE HARNESSES</span>
+          <span class="Coment_span">COLLARS</span>
+          <span class="Coment_span">BANDANAS</span>
+          <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll Animation (sa, 스크롤 애니메이션)
+    const saTriggerMargin = 300;
+    const saElementList = document.querySelectorAll(".sa");
+
+    const saFunc = function () {
+      for (const element of saElementList) {
+        if (!element.classList.contains("show")) {
+          if (
+            window.innerHeight >
+            element.getBoundingClientRect().top + saTriggerMargin
+          ) {
+            element.classList.add("show");
+          }
+        }
+      }
+    };
+
+    window.addEventListener("load", saFunc);
+    window.addEventListener("scroll", saFunc);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</body>
+
+</html>
