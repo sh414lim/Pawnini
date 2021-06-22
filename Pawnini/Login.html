@@ -1,5 +1,3 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="style/Login.css" />
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/Header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
   </head>
-  <!-- <%@ include file="../include/Header.jsp" %> -->
   <body>
-    <!-- <div class="Login">
+    <div class="Login">
       <ul class="Login_ul">
         <li><a href="./Login.html">LOGIN</a></li>
         <li><a href="./signUp.html">SignUp</a></li>
         <li><a href="./Mypage.html">My Pages</a></li>
+        <li class="Manager">
+          관리자
+          <span class="dropmenu">
+            <!-- 관리자 카테고리 메뉴 연동 -->
+            <span><a href="./Mypage.html">분양관리</a></span>
+            <span><a href="./Mypage.html">회원관리</a></span>
+            <span><a href="./Mypage.html">상품관리</a></span>
+          </span>
+        </li>
       </ul>
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1><a href="./main.html"><img src=./images/Rogo.jpg></a></h1>
+        <a href="./main.html">
+          <h1>PaAWnini</h1>
+        </a>
+        <input class="Header_input" type="text" placeholder="Search..." />
       </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
+
+      <a class="basket" href="basket.html">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
           Dog
@@ -43,33 +57,54 @@
         </li>
         <li><a href="./EVENT/event.html">Event</a></li>
         <li><a href="./Service/Service.html">Service</a></li>
+
         <li class="Dog_dropmenu">
           <a href="./Adopotion/Adoption.html"> Adoption</a>
           <span class="dropmenu">
-            <span><a href="./Adopotion/dog.html">Cat</a></span>
-            <span><a href="./Adopotion/Cat.html">Dog</a></span>
+            <span><a href="./Adopotion/dog.html">Dog</a></span>
+            <span><a href="./Adopotion/Cat.html">Cat</a></span>
           </span>
         </li>
         <li><a href="./NOTIC/Notice.html">Notice</a></li>
       </ul>
-    </header> -->
+    </header>
 
-    <h1>공사중</h1>
-    <div class="Form">
-      <h1 class="Form_title">Login</h1>
-      <input class="Form_Login" type="text" placeholder="User Name" />
-      <input
-        class="Form_Password"
-        type="password"
-        placeholder="User password"
-      />
-      <button class="button_Login">Login</button>
-      <h3 class="Form_SignUP"><a href="signUp.html">Sign Up</a></h3>
+    <div class="Guide">
+      <span>LOGIN</span>
     </div>
 
-    <!-- <%@ include file="../include/Footer.jsp" %> -->
+    <form class="Form">
+      <h1>로그인</h1>
+      <input class="Form_Login" type="text" placeholder="Username" name="username"/>
+      <input class="Form_Password" type="password" placeholder="password" name="password"/>
+    </form>
+    <div>
+      <button>로그인</button>
+      <button>회원가입</button>
+    </div>
+    
 
-    <!-- <footer>
+
+
+    <div class="Bouns">
+      <ul class="Bouns_ul">
+        <li>
+          <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
+        </li>
+        <li>
+          <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
+       
+        </li>
+        <li>
+          <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
+        </li>
+        <li>
+          <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
+        </li>
+     
+    </div>
+
+    <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
           <li class="Coment_li">
@@ -107,6 +142,10 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
+    <script
+    src="https://kit.fontawesome.com/583cb96774.js"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

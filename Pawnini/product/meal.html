@@ -1,267 +1,290 @@
 <!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%> -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/main.css" />
-    <link rel="stylesheet" href="../style/snack.css" />
-    <title>meal</title>
-  </head>
-  <!-- <%@ include file="../include/Header.jsp" %> -->
-  <body>
-    <!-- <div class="Login">
-      <ul class="Login_ul">
-        <li><a href="../Login.html">LOGIN</a></li>
-        <li><a href="../signUp.html">SignUp</a></li>
-        <li><a>My Pages</a></li>
-      </ul>
-    </div>
-    <header class="Header_menu">
-      <div class="Title">
-        <h1><a href="../main.html"><img src=../images/Rogo.jpg></a></h1>
-      </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
-      <ul class="Header_ul">
-        <li class="Dog_dropmenu">
-          Dog
-          <span class="dropmenu">
-            <span><a href="./Snack.html">Snack</a></span>
-            <span><a href="./Supplies.html">Supplies</a></span>
-            <span><a href="./meal.html">meal</a></span>
-          </span>
-        </li>
-        <li class="Cat_dropmenu">
-          Cat
-          <span class="dropmenu">
-            <span><a href="../productCat/Snack.html">Snack</a></span>
-            <span><a href="../productCat/Supplies.html">Supplies</a></span>
-            <span><a href="../productCat/meal.html">meal</a></span>
-          </span>
-        </li>
-        <li><a href="../EVENT/event.html">Event</a></li>
-        <li><a href="../Service/Service.html">Service</a></li>
-        <li class="Dog_dropmenu">
-          <a href="../Adopotion/Adoption.html"> Adoption</a>
-          <span class="dropmenu">
-            <span><a href="../Adopotion/dog.html">Cat</a></span>
-            <span><a href="../Adopotion/Cat.html">Dog</a></span>
-          </span>
-        </li>
-        <li><a href="../NOTIC/Notice.html">Notice</a></li>
-      </ul> -->
-    </header>
-    <h1>Meal Dog</h1>
-    <div class="Table">
-      <ul>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-      </ul>
-      <ul>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-      </ul>
-      <ul>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-        <li class="Table_LI">
-          <span class="Table_Span">강아지 사료</span>
-        </li>
-      </ul>
-    </div>
-    <div class="product">
-      <ul class="product_ul">
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/snack.css" />
+        <link rel="stylesheet" href="../style/Header.css" />
+        <link rel="stylesheet" href="../style/footer.css" />
+    
+        <title>meal</title>
+      </head>
+      <!-- <%@ include file="../include/Header.jsp" %> -->
+      <body>
+        <div class="Login">
+          <ul class="Login_ul">
+            <li><a href="./Login.html">LOGIN</a></li>
+            <li><a href="./signUp.html">SignUp</a></li>
+            <li><a href="./Mypage.html">My Pages</a></li>
+            <li class="Manager">
+              관리자
+              <span class="dropmenu">
+                <!-- 관리자 카테고리 메뉴 연동 -->
+                <span><a href="./Mypage.html">분양관리</a></span>
+                <span><a href="./Mypage.html">회원관리</a></span>
+                <span><a href="./Mypage.html">상품관리</a></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <header class="Header_menu">
+          <div class="Title">
+    
+    
+            <h1><a href="./main.html">
+             PaAWnini
+            </a>
+          </h1> 
+    
+    
+    
+    
+            <form method="get" action="goProductList.do">
+              <input class="Header_input" type="text" placeholder="Search..." name="searchKeyword2"/>
+              </form> 
+    
+    
+    
+    
+          </div>
+    
+          <a class="basket" href="basket.html">
+            <i class="fas fa-shopping-cart fa-lg"></i>
           </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-            <ul class="product_list">
-              <li class="product_title">원목 캣타워 소나무</li>
-              <li class="product_cash">$50.000원</li>
-              <li class="product_rank">❤❤❤❤🤍</li>
-            </ul>
-          </a>
-        </li>
+    
+          <ul class="Header_ul">
+            <li class="Dog_dropmenu">
+              Dog
+              <span class="dropmenu">
+                <span><a href="./product/Snack.html">Snack</a></span>
+                <span><a href="./product/Supplies.html">Supplies</a></span>
+                <span><a href="./product/meal.html">meal</a></span>
+              </span>
+            </li>
+            <li class="Cat_dropmenu">
+              Cat
+              <span class="dropmenu">
+                <span><a href="./productCat/Snack.html">Snack</a></span>
+                <span><a href="./productCat/Supplies.html">Supplies</a></span>
+                <span><a href="./productCat/meal.html">meal</a></span>
+              </span>
+            </li>
+            <li><a href="./EVENT/event.html">Event</a></li>
+            <li><a href="./Service/Service.html">Service</a></li>
+    
+            <li class="Dog_dropmenu">
+              <a href="./Adopotion/Adoption.html"> Adoption</a>
+              <span class="dropmenu">
+                <span><a href="./Adopotion/dog.html">Dog</a></span>
+                <span><a href="./Adopotion/Cat.html">Cat</a></span>
+              </span>
+            </li>
+            <li><a href="./NOTIC/Notice.html">Notice</a></li>
+          </ul>
+        </header>
+        
 
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
-        <li class="product_li">
-          <a href="">
-            <img class="product_img" src="../images//dog2.jpg" />
-          </a>
-        </li>
 
-        <li>4</li>
-        <li>5</li>
-      </ul>
-    </div>
+        <div class="Guide">
+          <span>MEAL</span>
+        </div>
 
-    <!-- <%@ include file="../include/Footer.jsp" %> -->
+        <div class="title_product">
+        <h3>사료</h3>
+        </div>
 
-    <!-- <footer>
-      <div class="Coment">
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
+        <div class="Kategorie">
+          <h4>분류 ></h4>
+          <ul class="Kategorie_ul">
+            <a href="#"><li>건식</li></a>
+            <a href="#"><li>습식</li></a>
+            <a href="#"><li></li></a>
+          </ul>
+        </div>
+        <div class="grid">
+              <ul class="product">
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
+                <li>
+                  <a href="#"><img src="../images//grid.PNG"/></a>
+                  <h3>이것은 갈비인가 사료인가</h3>
+                  <p>100원</p>
+                  <p>❤❤❤❤❤</p>
+                </li>
 
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
 
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
 
-        <ul class="Coment_Ul">
-          <li class="Coment_li">
-            <span class="Coment_span">REVERSIBLE HARNESSES</span>
-            <span class="Coment_span">COLLARS</span>
-            <span class="Coment_span">BANDANAS</span>
-            <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
-          </li>
-        </ul>
-      </div>
-    </footer> -->
-  </body>
-</html>
+
+              </ul>
+           
+          </div>
+
+
+        
+        <div class="Bouns">
+          <ul class="Bouns_ul">
+            <li>
+              <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
+            </li>
+            <li>
+              <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
+           
+            </li>
+            <li>
+              <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
+            </li>
+            <li>
+              <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
+            </li>
+         
+        </div>
+        
+        <footer>
+          <div class="Coment">
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+    
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+    
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+    
+            <ul class="Coment_Ul">
+              <li class="Coment_li">
+                <span class="Coment_span">REVERSIBLE HARNESSES</span>
+                <span class="Coment_span">COLLARS</span>
+                <span class="Coment_span">BANDANAS</span>
+                <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+              </li>
+            </ul>
+          </div>
+        </footer>
+        <script
+          src="https://kit.fontawesome.com/583cb96774.js"
+          crossorigin="anonymous"
+        ></script>
+      </body>
+    </html>
+    

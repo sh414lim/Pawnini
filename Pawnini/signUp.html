@@ -1,5 +1,3 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign</title>
     <link rel="stylesheet" href="style/sigUp.css" />
-    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/Header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
   </head>
-
-  <!-- <%@ include file="../include/Header.jsp" %> -->
   <body>
-    <!-- <div class="Login">
+    <div class="Login">
       <ul class="Login_ul">
         <li><a href="./Login.html">LOGIN</a></li>
         <li><a href="./signUp.html">SignUp</a></li>
         <li><a href="./Mypage.html">My Pages</a></li>
+        <li class="Manager">
+          관리자
+          <span class="dropmenu">
+            <!-- 관리자 카테고리 메뉴 연동 -->
+            <span><a href="./Mypage.html">분양관리</a></span>
+            <span><a href="./Mypage.html">회원관리</a></span>
+            <span><a href="./Mypage.html">상품관리</a></span>
+          </span>
+        </li>
       </ul>
     </div>
     <header class="Header_menu">
       <div class="Title">
-        <h1><a href="./main.html"><img src=./images/Rogo.jpg></a></h1>
+        <a href="./main.html">
+          <h1>PaAWnini</h1>
+        </a>
+        <input class="Header_input" type="text" placeholder="Search..." />
       </div>
-      <input class="Header_input" type="text" placeholder="Search..." />
+
+      <a class="basket" href="basket.html">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+
       <ul class="Header_ul">
         <li class="Dog_dropmenu">
           Dog
@@ -44,52 +57,200 @@
         </li>
         <li><a href="./EVENT/event.html">Event</a></li>
         <li><a href="./Service/Service.html">Service</a></li>
+
         <li class="Dog_dropmenu">
           <a href="./Adopotion/Adoption.html"> Adoption</a>
           <span class="dropmenu">
-            <span><a href="./Adopotion/dog.html">Cat</a></span>
-            <span><a href="./Adopotion/Cat.html">Dog</a></span>
+            <span><a href="./Adopotion/dog.html">Dog</a></span>
+            <span><a href="./Adopotion/Cat.html">Cat</a></span>
           </span>
         </li>
         <li><a href="./NOTIC/Notice.html">Notice</a></li>
       </ul>
-    </header> -->
-    <h1>공사중</h1>
-    <div class="User">
-      <h1 class="User_title">Sign Up</h1>
-      <h3 class="User_text">이름*</h3>
-      <input class="User_name" type="text" placeholder="User Name" />
-      <h3 class="User_text">비밀번호*</h3>
-      <input
-        class="User_Password"
-        type="password"
-        placeholder="User password"
-      />
-      <h3 class="User_text">닉네임*</h3>
-      <input class="User_nickname" type="text" placeholder="User Nick Name" />
-      <h3 class="User_text">이메일*</h3>
-      <input class="User_email" type="email" placeholder="User Email" />
-      <h3 class="User_text">전화번호*</h3>
-      <input class="User_phone" type="tel" placeholder="User Phone" />
-      <h3 class="User_text">카드</h3>
-      <input class="User_card_id" type="text" placeholder="User Card" />
-      <h3 class="User_text">카드번호</h3>
-      <input class="User_card_come" type="text" placeholder="User CardNumber" />
-      <h3 class="User_text">우편번호</h3>
-      <input class="User_postcode" type="text" placeholder="User PostNumber" />
-      <h3 class="User_text">주소*</h3>
-      <input class="User_f_addr" type="text" placeholder="User Address" />
-      <h3 class="User_text">상세주소*</h3>
-      <input
-        class="User_s_addr"
-        type="text"
-        placeholder="User Detail Address"
-      />
-      <button class="User_Button">Sign Up</button>
+    </header>
+
+    <div class="Guide">
+      <span>REGISTER</span>
     </div>
 
-    <!-- <%@ include file="../include/Footer.jsp" %> -->
-    <!-- <footer>
+    <h2 class="text" align="center">회원가입</h2>
+    <section class="Form_section">
+      <form name="f1rm" id="f1rm">
+        <table align="center">
+          <tr>
+            <td>
+              <input type="text" id="member_id" class="input" onFocus="" placeholder="아이디"/>
+              <input
+                type="button"
+                onClick="idChk()"
+                style="cursor: pointer"
+                value="중복확인"
+              /><br />
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <input
+                type="password"
+                id="member_pwd"
+                class="input"
+                maxlength="20"
+                placeholder="비밀번호"
+              />
+            </td>
+          </tr>
+       
+          <tr>
+            <td>
+              <input
+                type="password"
+                id="chk_member_pwd"
+                class="input"
+                maxlength="20"
+                placeholder="비밀번호 확인"
+              />
+              <label id="checkPasswd"></label>
+            </td>
+          </tr>
+       
+          <tr>
+            <td>
+              <input type="text" id="member_name" class="input" placeholder="이름"/><br />
+              <label id="chkname"></label>
+      
+              <tr>
+                <td>
+                  <input type="text" id="member_nickname" class="input" placeholder="닉네임" /><br />
+                </td>
+              </tr>
+           
+              <tr>
+                <td>
+                  <input type="text" size="15" id="email_id" class="input" placeholder="이메일"/> @
+                  <input
+                    type="text"
+                    size="15"
+                    id="email_addr"
+                    class="input"
+                    disabled
+                  />
+                  <select id="email_select">
+                    <option value="" selected>::선택하세요::</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="1">직접입력</option>
+                  </select>
+                </td>
+              </tr>
+            
+              <tr>
+                <td>
+                  <span>전화번호*</span>
+                  <select id="NUMst">
+                    <option value="" selected>::선택::</option>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                  </select>
+                  -
+                  <input
+                    type="text"
+                    id="NUMnd"
+                    class="input"
+                    maxlength="4"
+                    size="4"
+                  />
+                  -
+                  <input
+                    type="text"
+                    id="NUMrd"
+                    class="input"
+                    maxlength="4"
+                    size="4"
+                  />
+                </td>
+              </tr>
+              
+              <tr class="addres">
+                <td>
+                  <span>주소</span>
+                  <input
+                    type="text"
+                    name="member_postcode"
+                    id="member_postcode"
+                    class="input"
+                    readonly
+                    size="10"
+                  />
+                  <input
+                    type="button"
+                    onclick="searchPost()"
+                    style="cursor: pointer"
+                    value="우편번호 찾기"
+                  /><br /><br />
+                  <input
+                    type="text"
+                    name="member_f_addr"
+                    id="member_f_addr"
+                    class="input"
+                    size="60"
+                    readonly
+                  />
+                </td>
+              </tr>
+              <tr>
+                
+                <td>
+              <span>상세주소</span>
+
+                  <input
+                    type="text"
+                    name="member_s_addr"
+                    id="member_s_addr"
+                    class="input"
+                    size="60"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    class="button_register"
+                    type="button"
+                    onclick="doSignup()"
+                    style="cursor: pointer"
+                    value="회원가입"
+                  />
+                  <button></button>
+                </td>
+              </tr>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <div class="Bouns">
+      <ul class="Bouns_ul">
+        <li>
+          <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
+        </li>
+        <li>
+          <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
+       
+        </li>
+        <li>
+          <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
+        </li>
+        <li>
+          <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
+        </li>
+     
+    </div>
+
+    <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
           <li class="Coment_li">
@@ -127,6 +288,11 @@
           </li>
         </ul>
       </div>
-    </footer> -->
-  </body>
+    </footer>
+    <script
+    src="https://kit.fontawesome.com/583cb96774.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
 </html>

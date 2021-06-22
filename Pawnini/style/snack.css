@@ -1,84 +1,62 @@
-body{
-   
+.title_product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    width: 70%;
+    margin-left: 180px;
+    margin-top: 50px;
 }
 
-.Table{
+.Kategorie{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #F4F4F5;
+    border-bottom: 2px solid #F4F4F5;
+    margin-left: 180px;
+    width: 80%;
+
+}
+
+.Kategorie_ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height:250px ;
-    width: 85%;
-    margin-left: 40px;
-    border:5px solid rgba(0,0,0,0.3) ;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 130px;
-}
-.Table_LI{
-    padding:20px;
-}
-.Table_Span{
-    font-size: 16px;
-    opacity:0.5 ;
-    font-weight: 600;
-    cursor: pointer;
-}
-.Table_LI :hover{
-    color: pink;
-    transition: color 0.5s ease-in-out;
-}
-
-.product{
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-}
-.product_ul{
-    display: grid;
-    flex-wrap: wrap;
-    gap:80px;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows:repeat(4,300px) ;
     text-decoration: none;
     list-style: none;
-    width: 90vw;
-    margin-left: 30px;
-
+    width: 60%;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.Kategorie h4{
+    opacity: 0.5;
 }
 
-.product_img{
+.grid{
+ display: flex;
+}
+.product {
+  
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 180px;
-    height: 180px;
-    margin-top: 30px;
+    width: 80%;
+    margin-left: 130px;
 }
-.product_li :hover{
-    opacity: 0.3;
-    transition: opacity 0.5s ease-in-out;
-}
-.product_list{
+.product li{
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.product_title{
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    width: 150px;
-    font-weight: 600;
-}
-.product_cash{
-    padding-bottom: 10px;
-    font-weight: 600;
-
-
-}
-.product_rank{
-color:red;
-}
-.product_li{
+.product li:hover{
+    transition: 0.5s ease-in-out;
     box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.product h3,
+.product p{
+    margin-top: 0;
 }
