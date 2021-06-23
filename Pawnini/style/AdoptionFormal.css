@@ -1,3 +1,8 @@
+*{
+    text-decoration: none;
+    
+}
+
 .table{
     margin-top: 80px;
     border: none;
@@ -7,6 +12,7 @@
     width: 70%;
     padding: 50px;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 .table:hover{
     transition:  box-shadow 0.5s ease-in-out ;
@@ -136,7 +142,7 @@ img:hover{
   .list{
     background:#fdcb6e;
     color:white;
-    font-weight: 600;
+    font-weight: 900;
     border:none;
     position:relative;
     height:60px;
@@ -149,7 +155,8 @@ img:hover{
   .list:hover{
       border: 5px solid #fdcb6e ;
     background:#fff;
-    color:black
+    color:black;
+    font-weight: 900;
   }
   .list:before,button:after{
     content:'';
