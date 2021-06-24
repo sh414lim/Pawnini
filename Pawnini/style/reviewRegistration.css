@@ -19,9 +19,9 @@ a{
     display: flex;
     align-items: center;
     border: 5px solid #fdcb6e;
-    width: 70%;
     padding: 50px;
     font-size: 25px;
+    width: 70%;
 }
 .table:hover{
     transition:  box-shadow 0.5s ease-in-out ;
