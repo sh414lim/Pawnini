@@ -104,6 +104,7 @@ uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> -->
     <h2 class="table_title">게시판 답글 - # ${ cs_id} :</h2>
 
     <div>
+        <!-- 여기 폼이 어떤건지 데모좀 보여줄수 잇음? -->
       <form id="csForm" name="csForm">
         <input
           type="text"
@@ -119,7 +120,7 @@ uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> -->
         <table class="table" align="center">
           <tr>
             <td>
-              <label for="cs_title">제목</label
+              <label for="cs_title"><span>제목</span></label
               ><input
                 type="text"
                 id="cs_title"
@@ -131,25 +132,25 @@ uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> -->
           </tr>
           <tr>
             <td>
-              <label for="cs_writer">작성자</label
+              <label for="cs_writer"><span>작성자</span></label
               ><input type="text" id="cs_writer" name="cs_writer" required />
             </td>
             <!--  로그인 하면 후 멤버아이디도 보여주기 -->
             <td>
-              <label for="member_id">멤버아이디</label>${member.member_id }
+              <label for="member_id"><span>멤버아이디</span></label>${member.member_id }
             </td>
           </tr>
           <tr>
             <td>
-              <label for="cs_show">공개 여부</label>
+              <label for="cs_show"><span>공개 여부</span></label>
               <select name="cs_show" id="cs_show">
-                <option selected>${cs.cs_show }</option>
+                <option selected class="option" >${cs.cs_show }</option>
               </select>
             </td>
           </tr>
           <tr>
             <td>
-              <label for="cs_content">내용</label><br /><textarea
+              <label for="cs_content"><span>내용</span></label><br /><textarea
                 name="cs_content"
                 id="cs_content"
                 cols="50"
@@ -161,7 +162,7 @@ uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> -->
 
           <tr>
             <td>
-              <label for="cs_fileName">파일</label
+              <label for="cs_fileName"><span>파일</span></label
               ><input class="file" type="file" name="cs_fileName" id="cs_fileName" />
             </td>
           </tr>

@@ -27,6 +27,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+
 }
 
 .table td{
@@ -106,6 +108,7 @@ img:hover{
             height:60px;
             font-size:1.6em;
             padding:0 2em;
+            margin-left: 15px;
             cursor:pointer;
             transition:800ms ease all;
             outline:none;
@@ -148,7 +151,7 @@ img:hover{
             cursor: pointer;
             width: 10%;
             border-radius: 30px;
-            margin-left: 800px;
+            margin-left: 700px;
             
         }
         .button_list{
@@ -195,4 +198,4 @@ img:hover{
               justify-content: center;
               align-items: center;
               margin-bottom: 15px;
-          }
+            }
