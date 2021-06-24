@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link  rel="stylesheet" href="./style/Header.css"/>
+    <link rel="stylesheet" href="./style/footer.css"/>
+    <link rel="stylesheet" href="./style/product_Registration.css"/>
+    <title>Insert title here</title>
+  </head>
+  <!-- <%@ include file="../../include/Header.jsp" %> -->
+  <body>
+    <div class="Login">
+      <ul class="Login_ul">
+        <li><a href="./Login.html">LOGIN</a></li>
+        <li><a href="./signUp.html">SignUp</a></li>
+        <li><a href="./Mypage.html">My Pages</a></li>
+        <li class="Manager">
+          관리자
+          <span class="dropmenu">
+            <!-- 관리자 카테고리 메뉴 연동 -->
+            <span><a href="./Mypage.html">분양관리</a></span>
+            <span><a href="./Mypage.html">회원관리</a></span>
+            <span><a href="./Mypage.html">상품관리</a></span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <header class="Header_menu">
+      <div class="Title">
+        <a href="./main.html">
+          <h1>PaAWnini</h1>
+        </a>
+        <input class="Header_input" type="text" placeholder="Search..." />
+      </div>
+
+      <a class="basket" href="basket.html">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+      </a>
+
+      <ul class="Header_ul">
+        <li class="Dog_dropmenu">
+          Dog
+          <span class="dropmenu">
+            <span><a href="./product/Snack.html">Snack</a></span>
+            <span><a href="./product/Supplies.html">Supplies</a></span>
+            <span><a href="./product/meal.html">meal</a></span>
+          </span>
+        </li>
+        <li class="Cat_dropmenu">
+          Cat
+          <span class="dropmenu">
+            <span><a href="./productCat/Snack.html">Snack</a></span>
+            <span><a href="./productCat/Supplies.html">Supplies</a></span>
+            <span><a href="./productCat/meal.html">meal</a></span>
+          </span>
+        </li>
+        <li><a href="./EVENT/event.html">Event</a></li>
+        <li><a href="./Service/Service.html">Service</a></li>
+
+        <li class="Dog_dropmenu">
+          <a href="./Adopotion/Adoption.html"> Adoption</a>
+          <span class="dropmenu">
+            <span><a href="./Adopotion/dog.html">Dog</a></span>
+            <span><a href="./Adopotion/Cat.html">Cat</a></span>
+          </span>
+        </li>
+        <li><a href="./NOTIC/Notice.html">Notice</a></li>
+      </ul>
+    </header>
+
+    <div class="Guide">
+        <span>분양 신청서</span>
+      </div>
+  
+
+
+
+    <div class="insert_product" align="center">
+      <form
+        action="insertProduct.do"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <table class="table" >
+          <tr>
+            <td>
+              <span>종류</span>
+              <select class="option" name="product_f_code">
+                <option value="DOG">강아지</option>
+                <option value="CAT">고양이</option>
+              </select>
+            </td>
+          </tr>
+         
+            <td>
+                <span>    견종</span>
+          
+              <input type="text" name="product_brand" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <span> 강아지 이름</span>
+             
+              <input type="text" name="product_name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <span>분양인 이름</span>
+              
+              <input type="text" name="product_option" />
+            </td>
+          </tr>
+        
+          <tr>
+           
+          </tr>
+          <tr>
+            <td>
+                <span> 분양 희망이유</span>
+             
+              <textarea rows="10" cols="40" name="product_desc"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <span> 분양인 전화번호</span>
+             
+              <input type="tel" name="product_stock" />
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <input class="button" type="submit" value="문의하기" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+     <!-- 코멘트-------------------------------------------------------------------------- -->
+     <div class="Bouns">
+        <ul class="Bouns_ul">
+          <li>
+            <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
+          </li>
+          <li>
+            <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
+         
+          </li>
+          <li>
+            <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
+          </li>
+          <li>
+            <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
+          </li>
+       
+      </div>
+  
+      <footer>
+        <div class="Coment">
+          <ul class="Coment_Ul">
+            <li class="Coment_li">
+              <span class="Coment_span">REVERSIBLE HARNESSES</span>
+              <span class="Coment_span">COLLARS</span>
+              <span class="Coment_span">BANDANAS</span>
+              <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+            </li>
+          </ul>
+  
+          <ul class="Coment_Ul">
+            <li class="Coment_li">
+              <span class="Coment_span">REVERSIBLE HARNESSES</span>
+              <span class="Coment_span">COLLARS</span>
+              <span class="Coment_span">BANDANAS</span>
+              <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+            </li>
+          </ul>
+  
+          <ul class="Coment_Ul">
+            <li class="Coment_li">
+              <span class="Coment_span">REVERSIBLE HARNESSES</span>
+              <span class="Coment_span">COLLARS</span>
+              <span class="Coment_span">BANDANAS</span>
+              <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+            </li>
+          </ul>
+  
+          <ul class="Coment_Ul">
+            <li class="Coment_li">
+              <span class="Coment_span">REVERSIBLE HARNESSES</span>
+              <span class="Coment_span">COLLARS</span>
+              <span class="Coment_span">BANDANAS</span>
+              <span class="Coment_span">HAIR RIBBONS & BRACELETS FOR HUMANS</span>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+  <!-- <%@ include file="../../include/Footer.jsp" %> -->
+  <script>
+    $("#product_img").change(function () {
+      if (this.files && this.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (data) {
+          $(".select_img img").attr("src", data.target.result).width(300);
+        };
+        reader.readAsDataURL(this.files[0]);
+      }
+    });
+  </script>
+</html>
