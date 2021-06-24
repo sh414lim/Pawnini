@@ -195,7 +195,7 @@
 
           .product_bener{
             display: flex;
-            background-image: url("../images/dog12.jpg");
+            background-image: url("../images/pet.jpg");
             background-position: center center;
             background-size: cover;
             height: 600px;
@@ -216,19 +216,21 @@
             color:white;
             font-size: 50px;
           }
+          .product_img{
+            display: flex;
+            justify-content: center;
+          }
 
           .product_image_des{
             display: grid;
-            grid-template-columns: repeat(1,1fr);
-            background-image: url("../images/dog12.jpg");
+            background-image: url("../images/dis.PNG");
             background-position: center center;
             background-size: cover;
-            height: 600px;
+            height:500px;
             margin-bottom: 150px;
           z-index: 0;
-          margin-left: 150px;
+          margin-left: 50px;
           margin-top: 100px;
-          width: 80%;
           }
           .product_title{
             display: flex;
@@ -237,4 +239,14 @@
             font-weight: 600;
             padding: 50px;
             text-shadow:  5px 5px 5px gray;   
+          }
+          .Product_dis{
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 100px
+          }
+          .pawnini{
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
           }
