@@ -7,9 +7,9 @@ prefix="core" %> -->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Insert title here</title>
-    <link rel="stylesheet" href="style/Header.css"/>
-    <link rel="stylesheet" href="style/footer.css"/>
-    <link rel="stylesheet" href="style/insertCs.css"/>
+    <link rel="stylesheet" href="style/Header.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/insertCs.css" />
   </head>
   <body>
     <div class="Login">
@@ -75,35 +75,60 @@ prefix="core" %> -->
       <span>CS 등록</span>
     </div>
 
-    <div>
-      <h1 class="table_title">CS 등록</h1>
-      <form class="container" action="insertCs.do" method="post" enctype="multipart/form-data">
+    <section class="container">
+      <form
+        class="container"
+        name="insertForm"
+        action="insertCs.do"
+        method="post"
+        enctype="multipart/form-data"
+      >
         <table class="table" align="center">
+          <!-- 일단은 member -->
           <tr>
-            <td>
-              <label for="cs_title"><span>제목</span></label
-              ><input type="text" name="cs_title" required autofocus />
+            <td class="cs">
+              <label for="member_id"><span>멤버아이디</span></label
+              ><input
+                type="text"
+                name="member_id"
+                id="member_id"
+                value="${member.member_id }"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="cs">
+              <label for="cs_title">제목</label
+              ><input
+                type="text"
+                id="cs_title"
+                name="cs_title"
+                required
+                autofocus
+              />
             </td>
           </tr>
           <tr>
-            <td>
-              <label for="cs_writer"><span>작성자</span></label
-              ><input type="text" name="cs_writer" required />
+            <td class="cs">
+              <label for="cs_writer">작성자</label
+              ><input type="text" id="cs_writer" name="cs_writer" required />
             </td>
           </tr>
           <tr>
-            <td>
-              <label for="cs_show"><span>공개여부</span></label>
-              <select name="cs_show">
+            <td class="cs">
+              <label for="cs_show">공개 여부</label>
+              <select name="cs_show" id="cs_show">
                 <option value="Y">Y</option>
-                <option value="Y">N</option>
+                <option value="N">N</option>
               </select>
             </td>
           </tr>
           <tr>
-            <td>
-              <label for="cs_content"><span>내용</span></label><br /><textarea
+            <td class="cs">
+              <label for="cs_content">내용</label><br /><textarea
                 name="cs_content"
+                id="cs_content"
                 cols="50"
                 rows="10"
                 required
@@ -112,55 +137,30 @@ prefix="core" %> -->
           </tr>
 
           <tr>
-            <td>
-              <label for="cs_img"><span>이미지</span></label
-              ><input type="text" name="cs_img" />
+            <td class="cs">
+              <label for="cs_uploadFile">추가 파일 첨부</label
+              ><input type="file" name="cs_uploadFile" id="cs_uploadFile" />
             </td>
           </tr>
 
           <tr>
-            <td>
-              <label for="cs_file"><span>파일</span></label
-              ><input type="file" name="cs_file" />
+            <td class="cs">
+              <button
+                class="insertBtn"
+                type="submit"
+                style="cursor: pointer"
+                value="글 등록"
+              >
+                글 등록
+              </button>
             </td>
-          </tr>
-
-          <!-- 일단은 -->
-          <tr>
-            <td>
-              <label for="member_id"><span>멤버아이디</span></label
-              ><input type="text" name="member_id" />
-            </td>
-          </tr>
-
-          <tr>
-            <td><input class="button" type="submit" value="등록" /></td>
           </tr>
         </table>
       </form>
-      <hr />
-        <a class="button_list" href="getCsList.do">게시글 목록</a>
-    </div>
-
-
-    <div class="Bouns">
-      <ul class="Bouns_ul">
-        <li>
-          <h3> <i class="fas fa-drumstick-bite lg"></i>신선한 사료</h3>
-        </li>
-        <li>
-          <h3><i class="far fa-clock"></i>유통기한 100% 책임제</h3>
-       
-        </li>
-        <li>
-          <h3><i class="fas fa-shipping-fast"></i>신속! 정확! 배송!</h3>
-        </li>
-        <li>
-          <h3><i class="fas fa-rss"></i>만원 이상 구매시 무료배송</h3>
-        </li>
-     
-    </div>
-
+      <div class="button_div">
+        <a class="button" href="getCsList.do">게시글 목록</a>
+      </div>
+    </section>
     <footer>
       <div class="Coment">
         <ul class="Coment_Ul">
