@@ -1,5 +1,6 @@
 .container{
 font-weight: 900;
+margin-left: 50px;
 }
 
 
@@ -7,7 +8,7 @@ font-weight: 900;
 .bacground_img{
   background-position: center center;
   background-size: cover;
-  filter:blur(5px);
+  filter:blur(7px);
   z-index: -1;
   position: absolute;
   width: 90%;
@@ -36,7 +37,7 @@ height: 150%;
   padding-left: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 .write_head{
   display: flex;
@@ -47,10 +48,13 @@ height: 150%;
   margin-right: 150px;
 }
 span{
-  font-size: 15px;
   font-weight: 900;
   opacity: 0.8;
   font-weight: 900;
+
+  /* 이미지 활성화 할때는 글자색 고민 */
+  color: white;
+  font-size: 20px;
 }
 
 .write{
@@ -67,13 +71,16 @@ span{
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: inherit;
+  font-size: 20px;
 }
-
-input{
+.form-group input{
   width: 10%;
   border: none;
   outline: none;
  background-color: inherit;
+ color: black;
+ font-size: 20px;
+ font-weight: 900;
 }
 #size{
   margin-right: 50px;
@@ -110,7 +117,7 @@ input{
 
 .btn_reply{
   background:#fdcb6e;
-  color:white;
+  color: black;
   font-size: 15px;
   padding: 10px;
   margin-right: 10px;
@@ -172,7 +179,7 @@ width: 95%;
 
 .btn_review{
   background:#fdcb6e;
-  color:white;
+  color:black;
   font-size: 15px;
   padding: 10px;
   margin-right: 10px;
