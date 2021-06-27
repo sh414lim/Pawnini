@@ -17,7 +17,6 @@ a{
     margin-top: 80px;
     border: none;
     display: flex;
-    align-items: center;
     border: 5px solid #fdcb6e;
     width: 70%;
     padding: 50px;
@@ -84,18 +83,7 @@ padding-top: 20px;
     outline: none;
     border-radius: 10px;
 }
-textarea{
-    border:3px solid #fdcb6e ;;
-    outline: none;
-    padding: 15px;
-    margin-bottom: 20px;
-}
 
-img:hover{
-    transition: box-shadow 0.5s ease-in-out ;
-    opacity: 0.7;
-    box-shadow: 6px 6px 2px 2px rgba(0, 0, 0, 0.5);
-}
 
 .button{
     display: flex;
