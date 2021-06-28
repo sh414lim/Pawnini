@@ -4,8 +4,7 @@ prefix="c" %>
 
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="../style/detail.css" />
-  <link rel="stylesheet" href="../style/main.css" />
+  <link rel="stylesheet" href="./test.css" />
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script type="text/javascript">
@@ -124,9 +123,9 @@ prefix="c" %>
         </div>
         <div class="button">
           <input type="hidden" id="product_id" value="${product.product_id}" />
-          <select id="cart_amount">
+          <select class="Quantity" id="cart_amount">
             <c:forEach begin="1" end="10" var="i">
-              <option value="${i}">${i}</option>
+              <option class="Quantity" value="${i}">${i}</option>
             </c:forEach>
           </select>
 
