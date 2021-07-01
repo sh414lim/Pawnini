@@ -1,0 +1,92 @@
+.orderInfo {
+	border: 5px solid #eee;
+	padding: 10px 20px;
+	margin: 20px 250px 20px 250px;
+}
+
+.orderView li {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #999;
+	list-style: none;
+	
+}
+
+.orderView li::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.thumb {
+	float: left;
+	width: 200px;
+}
+
+.thumb img {
+	width: 200px;
+	height: 200px;
+}
+
+.gdsInfo {
+	float: right;
+	width: calc(100% - 220px);
+	line-height: 2;
+}
+
+.gdsInfo span {
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+	margin-right: 10px;
+}
+.gdsInfo span:hover{
+    opacity: 0.7;
+}
+
+.button_div{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+	background: #fff;
+	color: black;
+    opacity: 0.7;
+}
+
+button:before, button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #fdcb6e;
+	transition: 400ms ease all;
+}
+
+button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+button:hover:before, button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+

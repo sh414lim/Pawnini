@@ -5,6 +5,51 @@ body{
   div{
     box-sizing: border-box;
   }
+
+  .mypags_form{
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 50px;
+    border-radius: 15px;
+    
+  }
+
+  .user_ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    font-weight: 600;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-left: 220px;
+    margin-top: 60px;
+    border-radius: 15px;
+    opacity: 0.7;
+  }
+  
+  .side_ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .side_ul li{
+    padding: 3px;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .title_fir{
+    display: flex;
+    width: 5%;
+    padding: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+    padding-bottom: 15px;
+  }
+  
+  
   
   /* alert badge */
   .circle{
@@ -18,19 +63,47 @@ body{
     left: 110%;
   }
   
-  /* 녹색 텍스트 */
-  .green{
-    color: #24855b;
+
+ 
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(1,150px);
+    grid-template-rows: repeat(6,50px);
+    gap: 15px;
+    margin-top: 10px;
+
+
   }
-  
-  .wrap{
-    background-color: #F8F8F8;  
+
+  .grid div{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
   }
+  .order:hover{
+ 
+  }
+
+  .grid div:hover{
+    transition: box-shadow 0.5s ease-in-out ;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+
+
+
+
+
   /* 녹색배경 */
   .greenContainer{  
     height: 132px;
     background-color:pink;    
-    
     display: flex;
     align-items: flex-end;
     padding: 16px;
@@ -44,118 +117,6 @@ body{
   .greenContainer .modify{
     margin-left: auto;
   }
-  
-  /* 단골상점 , 상품후기 , 적립금 박스 */
-  .summaryContainer{
-    background-color: white;  
-    display: flex;  
-    padding: 21px 16px;  
-    height: 90px;
-    margin-bottom: 10px;
-  }
-  /* 단골상점 , 상품후기 , 적립금 */
-  .summaryContainer .item{
-    flex-grow: 1
-  }
-  /* 녹색 숫자 */
-  .summaryContainer .number{
-    font-size: 19px;
-    font-weight: bold;
-    color: #24855b;
-  }
-  /* 텍스트 */
-  .summaryContainer .item > div:nth-child(2){
-    font-size: 13px;
-  }
-  
-  /* ================== 주문/배송조회 박스 시작 ==================== */
-  .shippingStatusContainer{
-    padding: 21px 16px;
-    background-color: white;
-    margin-bottom: 10px;
-  }
-  
-  /* 주문/배송조회 타이틀 */
-  .shippingStatusContainer .title{
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  /* 장바구니 결제완료 배송중 구매확정 [로우] */
-  .shippingStatusContainer .status{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 21px;
-  }
-  /* 장바구니 결제완료 배송중 구매확정 [아이템]  */
-  .shippingStatusContainer .item{
-    display: flex;
-  }
-  
-  .shippingStatusContainer .number{
-    font-size: 31px;
-    font-weight: 500;
-    text-align: center;
-  }
-  .shippingStatusContainer .text{
-    font-size: 12px;
-    font-weight: normal;
-    color: #c2c2c2;
-    text-align: center;
-  }
-  .shippingStatusContainer .icon{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    width: 16px;
-    height: 16px;
-  }
-  
-  
-  /*=================== 주문목록 ~ 찜한상품 리스트 ==================*/
-  .listContainer{  
-    padding: 0;
-    background-color: #ffffff;
-    margin-bottom: 10px;
-  }
-  .listContainer .item{  
-    display: flex;
-    align-items: center;
-    padding: 16px;
-    color: black;
-    text-decoration: none;  
-    height: 56px;
-    box-sizing: border-box;
-  }
-  .listContainer .icon{  
-    margin-right: 14px;
-  }
-  .listContainer .text{
-    font-size: 16px;
-    position: relative;
-  }
-  .listContainer .right{
-    margin-left: auto;
-  }
-  
-  
-  /*=================== 내지갑의 보유 적립금 들어가는 부분 ================*/
-  .listContainer .smallLight{
-    font-size: 14px;
-    color: #c2c2c2;  
-  }
-  .listContainer .smallLight > span{
-    margin-left: 10px;
-  }
-  
-  .listContainer .right .blct{
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  
-  
   
   /* 공지사항 이용안내 고객센터 */
   .infoContainer{
@@ -178,13 +139,8 @@ body{
   .infoContainer .item > div:first-child{
     margin-bottom: 2px;
   }
+
   
   
   
-  /*  */
-  .listContainer .item:hover{
-  /*   background-color: #f8f8f8; */
-  }
-  .infoContainer .item:hover{
-  /*   background-color: #f8f8f8; */
-  }
+  

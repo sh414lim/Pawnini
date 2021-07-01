@@ -4,14 +4,7 @@ uri="http://java.sun.com/jsp/jstl/fmt"%> -->
 <html>
   <head>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
-    />
+  
     <title>게시판</title>
     <link  rel="stylesheet" href="./style/Header.css"/>
     <link rel="stylesheet" href="./style/footer.css"/>
@@ -94,6 +87,7 @@ uri="http://java.sun.com/jsp/jstl/fmt"%> -->
         <div class="product_inqList">
           <c:set var="contextPath" value="${pageContext.request.contextPath}" />
           <form
+          class="table_form"
             name="updateInq_repForm"
             role="form"
             method="post"
@@ -122,18 +116,7 @@ uri="http://java.sun.com/jsp/jstl/fmt"%> -->
                     value="${inq_rep.inq_rep_title }"
                     />
                 <tr>
-                  <td>
-                    <label for="inq_rep_content"><span>댓글내용</span></label>
-                    <textarea
-                      name="inq_rep_content"
-                      rows="5"
-                      cols="40"
-                      class="form-control"
-                    >
-${inq_rep.inq_rep_content}</textarea
-                    >
-                    <tr>
-                      <td>
+                        <td>
                         <label for="inq_rep_name"><span>작성자</span></label>
                         <input
                           type="text"
@@ -152,13 +135,26 @@ ${inq_rep.inq_rep_content}</textarea
                           </td> -->
                         <!-- </tr> -->
                       </td>
+                      <td>
+                        
+                        <label for="inq_rep_content"><span>댓글내용</span></label>
+                    <textarea
+                      name="inq_rep_content"
+                      rows="5"
+                      cols="40"
+                      class="form-control"
+                    >
+${inq_rep.inq_rep_content}</textarea
+                    >
+                    <tr>
+                
                     </tr>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div class="button_div" >
-              <button  type="submit" class="update_submit_btn btn btn-success">
+              <button   type="submit" class="update_submit_btn btn btn-success">
                 저장
               </button>
               <button  type="button" class="update_cancel_btn btn btn-danger">
@@ -168,7 +164,6 @@ ${inq_rep.inq_rep_content}</textarea
           </form>
         </div>
       </section>
-      <hr />
     </div>
     <div class="Bouns">
         <ul class="Bouns_ul">

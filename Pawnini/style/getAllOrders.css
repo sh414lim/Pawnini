@@ -1,0 +1,25 @@
+section#content ul li {
+    border: 5px solid #eee;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 10px;
+  }
+
+  .section#content:hover{
+    box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 0.5);
+    transition:  box-shadow 0.5s ease-in-out  ;
+  }
+
+  section#content .allOrder span {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 90px;
+    margin-right: 10px;
+  }
+
+  section#content .allOrder {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
